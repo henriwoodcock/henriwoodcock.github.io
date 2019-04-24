@@ -1,3 +1,3 @@
-[Main Page](henriwoodcock.github.io)
+[Main Page](https://henriwoodcock.github.io)
 
-[Test Page](henriwoodcock.github.io/test/test.html)
+[Test Page](https://henriwoodcock.github.io/test/test.html)

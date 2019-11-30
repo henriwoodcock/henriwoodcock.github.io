@@ -1,94 +1,152 @@
-## Phantom for Jekyll
+# What's `jekyll-minimal-theme`?
 
-A minimalist, responsive portfolio theme for [Jekyll](http://jekyllrb.com/) with Bootstrap.
+It's another minimal(istic) Jekyll static site generator theme,
+that is, a ready-to-fork template pack.
 
-![preview](preview.jpg)
+See a live demo @ [`henrythemes.github.io/jekyll-minimal-theme` »](http://henrythemes.github.io/jekyll-minimal-theme)
 
-[See it in action](http://jamigibbs.github.io/phantom/).
+For example:
 
-## Fancy using it for your own site?
-
-Here are some steps to get you started:
-
-1. Clone this repo and cd into the directory:
-
-  ```bash
-  git clone https://github.com/jamigibbs/phantom.git your-dir-name && cd your-dir-name
-  ```
-
-2. Run Jekyll:
-
-  ```bash
-  bundle exec jekyll serve
-  ```
-
-  _Don't have Jekyll yet? [Get `er installed then!](http://jekyllrb.com/docs/installation/)_
-
-3. Visit in your browser at:
-
-  `http://127.0.0.1:4000`
-
-## Launching with Github Pages :rocket:
-
-Jekyll + Github pages is a marriage made in heaven. You can [use your own custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) or use the default Github url (ie. http://username.github.io/repository) and not bother messing around with DNS settings.
-
-## Theme Features
-
-### Navigation
-
-Navigation can be customized in `_config.yml` under the `nav_item` key. Default settings:
-
-```yaml
-nav_item:
-    - { url: '/', text: 'Home' }
-    - { url: '/about', text: 'About' }
+```
+├── _config.yml                               # site configuration
+├── _posts                                    # sample blog posts
+|   ├── 2014-05-05-sportdb-update-v192.md     #   filename format:
+|   ├── 2014-10-10-new-repo-baviria-bayern.md #    => YEAR-MONTH-DAY-TITLE.MARKUP
+|   ├── 2014-10-21-sql-views.md
+|   ├── 2014-11-11-new-reop-maps.md
+|   └── 2014-12-15-quick-starter-datafiles.md
+├── _layouts                           
+|   ├── default.html                   # master layout template
+|   └── post.html                      # single blog post template
+├── css                               
+|   ├── _settings.scss                 # style settings (e.g. variables)
+|   └── style.scss                     # master style page
+├── feed.xml                           # web feed template (e.g. in atom format)
+├── archive.html                       # archive template
+└── index.html                         # index template
 ```
 
-Set the `nav_enable` variable to false in `_config.yml` to disable navigation.
+will result in (with `permalink: /:title.html`):
 
-### Contact Form
-
-You can display a contact form within the modal window template. This template is already setup to use the [Formspree](https://formspree.io) email system. You'll just want to add your email address to the form in `/_includes/contact-modal.html`.
-
-Place the modal window template in any place you'd like the user to click for the contact form.
-The template will display a link to click for the contact form modal window:
-
-```liquid
-{% include contact.html %}
-{% include contact-modal.html %}
+```
+└── _site                                # output build folder; site gets generated here
+    ├── css
+    |   └── style.css                    # styles for pages (copied 1:1 as is)
+    ├── sportdb-update-v192.html         # blog post page
+    ├── new-repo-baviria-bayern.html     # another blog post page
+    ├── sql-views.html                   #  ""
+    ├── new-repo-maps.html               #  ""
+    ├── quick-starter-datafiles.html     #  ""
+    ├── feed.xml                         # web feed (e.g. in atom format)
+    ├── archive.html                     # archive page
+    └── index.html                       # index page
 ```
 
-### Animation Effects
 
-Animations with CSS classes are baked into the theme. To animate a section or element, simply add the animation classes:
+## Usage
 
-```html
-<div id="about-me" class="wow fadeIn">
-  I'm the coolest!
-</div>
+To use - delete all sample posts in the `_posts` folder and
+change the settings in `_config.yml` to use your own `site.title`
+and `site.url`:
+
+```
+title:   'Jekyll Minimal Theme'
+url:     'http://henrythemes.github.io/jekyll-minimal-theme'
+author:
+  name:  'Jekyll Minimal Theme Team'
 ```
 
-For a complete list of animations, see the [animation list](http://daneden.github.io/animate.css/).
 
-### Pagination
+## Color n Typography Settings (in `css/_settings.scss`)
 
-By default, pagination on the home page will activate after 10 posts. You can change this within `_config.yml`. You can add the pagination to other layouts with:
+Typography (Fonts):
 
-```liquid
-  {% for post in paginator.posts %}
-    {% include post-content.html %}
-  {% endfor %}
+~~~
+$font-family:       "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-  {% include pagination.html %}
-```
+$code-font-family:  Menlo, Monaco, "Courier New", monospace;
+~~~
 
-Read more about the [pagination plugin](http://jekyllrb.com/docs/pagination/).
+Colors:
 
-## Credit
+~~~
+$masthead-color:         #505050;
+$masthead-small-color:   #C0C0C0;
 
-* Bootstrap, http://getbootstrap.com/, (C) 2011 - 2016 Twitter, Inc., [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
+$post-title-color:       #303030;
+$post-date-color:        #9a9a9a;
 
-* Wow, https://github.com/matthieua/WOW, (C) 2014 - 2016 Matthieu Aussaguel
-, [GPL](https://github.com/matthieua/WOW#open-source-license)
 
-* Animate.css, https://github.com/daneden/animate.css, (C) 2016 Daniel Eden, [MIT](https://github.com/daneden/animate.css/blob/master/LICENSE)
+$body-color:            #515151;
+$body-background-color: #fff;
+
+$link-color:            #268bd2;
+
+$headings-color:        #313131;    // h1,h2,h3,h4,h5,h6
+
+$strong-color:          #303030;    // strong
+
+$pre-background-color:  #f9f9f9;    // pre
+
+$blockquote-color:        #7a7a7a;  // blockquote
+$blockquote-border-color: #e5e5e5;
+
+$table-border-color:         #e5e5e5;
+$table-odd-background-color: #f9f9f9;
+~~~
+
+A big thanks to the Poole theme; the `jekyll-minimal-theme` started out w/
+the typography and color settings from the Poole theme.
+
+
+## Alternative (Minimal) Jekyll Themes
+
+- Poole Theme by Mark Otto - [(Source)](https://github.com/poole/poole)
+
+- Pixyll Theme by John Otander - [(Source)](https://github.com/johnotander/pixyll)
+
+~~~
+in _main.scss:
+  font-family:     "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
+  code-font-family: Menlo, Monaco, "Courier New", monospace;
+  h1-h6|button|form|pagination|footer -font-family:
+                   'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+
+in _basscss.scss:
+  font-family:       'Helvetica Neue', Helvetica, sans-serif;
+~~~
+
+- Hikari Theme by Mathieu Mayer-Mazzoli - [(Source)](https://github.com/m3xm/hikari-for-Jekyll)
+
+~~~
+in components/_syntax.scss:
+  code-font-family:    'Courier', monospace;
+in base/_variables.scss:
+  font-family:         'Open Sans', sans-serif;
+  variant-font-family: 'Lora', Georgia, serif;
+in base/_global.scss:
+  h1-h6-font-family:  'Open Sans', sans-serif;
+in base/_reset.scss:
+  font-family:         sans-serif;
+  code-font-family:    monospace, monospace;
+~~~
+
+
+### More Themes
+
+See the [Dr. Jekyll's Themes](https://drjekyllthemes.github.io) directory.
+
+### More Quick Starter Wizard Scripts
+
+See the [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
+
+
+## License
+
+![](https://publicdomainworks.github.io/buttons/zero88x31.png)
+The theme and scripts are dedicated to the public domain. Use it as you please with no restrictions whatsoever.
+
+## Questions? Comments?
+
+Send them along to the [wwwmake forum](http://groups.google.com/group/wwwmake).
+Thanks!

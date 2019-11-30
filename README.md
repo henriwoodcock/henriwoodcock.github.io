@@ -1,152 +1,78 @@
-# What's `jekyll-minimal-theme`?
+mediator
+========
 
-It's another minimal(istic) Jekyll static site generator theme,
-that is, a ready-to-fork template pack.
+A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme
+[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](http://blog.base68.com).
 
-See a live demo @ [`henrythemes.github.io/jekyll-minimal-theme` »](http://henrythemes.github.io/jekyll-minimal-theme)
+Screenshots
+--------
+![screenshot](/assets/images/screenshot1.jpg)
+![screenshot](/assets/images/screenshot2.jpg)
+![screenshot](/assets/images/screenshot3.jpg)
 
-For example:
+Features
+-------
+* Fully Responsive layout
+* Use header images in articles, if you want to (add tag "image" and url to the image in the front matter section of a post)
+* Minimal design
+* Featured article support
+* FontAwesome implemented for easy use of icons fonts
+* Free & Open Source Font usage
+
+Getting Started
+---
+- [Fork this repository](https://github.com/dirkfabisch/mediator)
+- Clone it: `git clone https://github.com/YOUR-USER/mediator`
+- Install the requried gems ([GitHub Pages](https://github.com/github/pages-gem), [Bourbon](https://github.com/thoughtbot/bourbon) and [Jekyll](https://github.com/jekyll/jekyll), [Jemoji](https://github.com/jekyll/jemoji)): `bundle install`
+- Run the jekyll server: `bundle exec jekyll serve`
+
+You should have a server up and running locally at <http://localhost:4000>.
+
+Configuration
+-----
+
+The main settings happen in side of the _config.yml file:
+
+### Site
+
+Main settings for the site
+
+* **title**: name of your site
+* **description**: description of your site
+* **logo**: small logo for the site (300x * 300x)
+* **cover**: large background image on the index page
+
+* **name**: name site owner
+* **email**: mail address of the site owner
+* **author**: author name
+* **author_image**: small image of author (300x * 300px)
+* **disqus**: add a disqus forum for your post
+
+### Social
+
+The template allows to add all major social platforms to your site.
+Fill the the form for each platform. If you leave the share_* entries empty, the sharing buttons below a post are not shown.  If you leave the **url** and **desc** empty the icons are not shown on the index page, but the share icons on the article pages remains untouched (Thanks to [Phil](https://github.com/philsturgeon))
+
+* **icon**:	name of social platform (must match a name of [font-awsome](http://fortawesome.github.io/Font-Awesome/) icon set )
+* **url**:	url of your account
+* **desc**: slogan of the platform
+* **share_url**: share url
+* **share_title**: first part of url for the title
+* **share_link**: second part of the share url for the link to the post
+
+The Liquid template engine will magical combine the different parts to a share url.
 
 ```
-├── _config.yml                               # site configuration
-├── _posts                                    # sample blog posts
-|   ├── 2014-05-05-sportdb-update-v192.md     #   filename format:
-|   ├── 2014-10-10-new-repo-baviria-bayern.md #    => YEAR-MONTH-DAY-TITLE.MARKUP
-|   ├── 2014-10-21-sql-views.md
-|   ├── 2014-11-11-new-reop-maps.md
-|   └── 2014-12-15-quick-starter-datafiles.md
-├── _layouts                           
-|   ├── default.html                   # master layout template
-|   └── post.html                      # single blog post template
-├── css                               
-|   ├── _settings.scss                 # style settings (e.g. variables)
-|   └── style.scss                     # master style page
-├── feed.xml                           # web feed template (e.g. in atom format)
-├── archive.html                       # archive template
-└── index.html                         # index template
-```
+http://twitter.com/share?text=post_title&amp;url=post_url
+````
 
-will result in (with `permalink: /:title.html`):
+See [_config.yml](https://github.com/dirkfabisch/mediator/blob/master/_config.yml) for more examples.
 
-```
-└── _site                                # output build folder; site gets generated here
-    ├── css
-    |   └── style.css                    # styles for pages (copied 1:1 as is)
-    ├── sportdb-update-v192.html         # blog post page
-    ├── new-repo-baviria-bayern.html     # another blog post page
-    ├── sql-views.html                   #  ""
-    ├── new-repo-maps.html               #  ""
-    ├── quick-starter-datafiles.html     #  ""
-    ├── feed.xml                         # web feed (e.g. in atom format)
-    ├── archive.html                     # archive page
-    └── index.html                       # index page
-```
+Licensing
+---------
 
+[MIT](https://github.com/dirkfabisch/mediator/blob/master/LICENCE) with no added caveats, so feel free to use this on your site without linking back to me or using a disclaimer or anything silly like that.
 
-## Usage
-
-To use - delete all sample posts in the `_posts` folder and
-change the settings in `_config.yml` to use your own `site.title`
-and `site.url`:
-
-```
-title:   'Jekyll Minimal Theme'
-url:     'http://henrythemes.github.io/jekyll-minimal-theme'
-author:
-  name:  'Jekyll Minimal Theme Team'
-```
-
-
-## Color n Typography Settings (in `css/_settings.scss`)
-
-Typography (Fonts):
-
-~~~
-$font-family:       "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-$code-font-family:  Menlo, Monaco, "Courier New", monospace;
-~~~
-
-Colors:
-
-~~~
-$masthead-color:         #505050;
-$masthead-small-color:   #C0C0C0;
-
-$post-title-color:       #303030;
-$post-date-color:        #9a9a9a;
-
-
-$body-color:            #515151;
-$body-background-color: #fff;
-
-$link-color:            #268bd2;
-
-$headings-color:        #313131;    // h1,h2,h3,h4,h5,h6
-
-$strong-color:          #303030;    // strong
-
-$pre-background-color:  #f9f9f9;    // pre
-
-$blockquote-color:        #7a7a7a;  // blockquote
-$blockquote-border-color: #e5e5e5;
-
-$table-border-color:         #e5e5e5;
-$table-odd-background-color: #f9f9f9;
-~~~
-
-A big thanks to the Poole theme; the `jekyll-minimal-theme` started out w/
-the typography and color settings from the Poole theme.
-
-
-## Alternative (Minimal) Jekyll Themes
-
-- Poole Theme by Mark Otto - [(Source)](https://github.com/poole/poole)
-
-- Pixyll Theme by John Otander - [(Source)](https://github.com/johnotander/pixyll)
-
-~~~
-in _main.scss:
-  font-family:     "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
-  code-font-family: Menlo, Monaco, "Courier New", monospace;
-  h1-h6|button|form|pagination|footer -font-family:
-                   'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-
-in _basscss.scss:
-  font-family:       'Helvetica Neue', Helvetica, sans-serif;
-~~~
-
-- Hikari Theme by Mathieu Mayer-Mazzoli - [(Source)](https://github.com/m3xm/hikari-for-Jekyll)
-
-~~~
-in components/_syntax.scss:
-  code-font-family:    'Courier', monospace;
-in base/_variables.scss:
-  font-family:         'Open Sans', sans-serif;
-  variant-font-family: 'Lora', Georgia, serif;
-in base/_global.scss:
-  h1-h6-font-family:  'Open Sans', sans-serif;
-in base/_reset.scss:
-  font-family:         sans-serif;
-  code-font-family:    monospace, monospace;
-~~~
-
-
-### More Themes
-
-See the [Dr. Jekyll's Themes](https://drjekyllthemes.github.io) directory.
-
-### More Quick Starter Wizard Scripts
-
-See the [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
-
-
-## License
-
-![](https://publicdomainworks.github.io/buttons/zero88x31.png)
-The theme and scripts are dedicated to the public domain. Use it as you please with no restrictions whatsoever.
-
-## Questions? Comments?
-
-Send them along to the [wwwmake forum](http://groups.google.com/group/wwwmake).
-Thanks!
+Contact
+-------
+I'd love to hear from you at [@dirkfabisch](https://twitter.com/dirkfabisch). Feel free to open issues if you run into trouble or have suggestions. Pull Requests always welcome.

@@ -1,8 +1,6 @@
 ---
 layout: page
-title: About
+title: Stopy
 ---
-
-# StoPy or Stopy
 
 A Python package for stochastic processes, including stohastic integrals.

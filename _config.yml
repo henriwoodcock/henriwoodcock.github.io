@@ -6,8 +6,8 @@ relative_permalinks: false
 
 # Setup
 title:               Henri Woodcock
-tagline:             'Under construction'
-description:         'Data Science.'
+tagline:             'Data Scientist'
+description:         ''
 url:                 http://henriwoodcock.github.io
 baseurl:             ''
 paginate:            5

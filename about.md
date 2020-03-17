@@ -11,5 +11,6 @@ I received my BSc in Mathematics from the University of Leeds in 2019. My final 
 _wip_
 
 email: henriwoodcock@gmail.com
+[email](mailto:henriwoodcock@gmail.com) me.
 
 Checkout my [GitHub](https://github.com/henriwoodcock) or [Linkedin](https://www.linkedin.com/in/henri-woodcock-682338155/).

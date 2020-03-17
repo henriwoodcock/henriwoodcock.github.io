@@ -4,6 +4,7 @@
 - Figure out plan for projects vs posts
 - Landing home page or just straight into posts?
 - Separate pages for posts?
+- favicon update
 
 
 ## Contents

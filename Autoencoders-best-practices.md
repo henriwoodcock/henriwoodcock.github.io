@@ -81,7 +81,7 @@ Then reshape this to:
 pixel_shuffle_output = (sH x sW x C)
 ```
 This can be visualised in [figure 4]
-[!figure4](assets/images/46.png "Pixel Shuffle Diagram, taken from [14]")
+[!figure4](assets/images/fortysix.png "Pixel Shuffle Diagram, taken from [14]")
 
 
 ## Progressive Resizing

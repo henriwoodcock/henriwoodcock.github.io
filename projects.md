@@ -3,6 +3,6 @@ layout: page
 title: Projects
 ---
 
-{% for post in site.projects %}
-  * [ {{ post.title }} ]({{ post.url }})
+{% for project in site.projects %}
+  * [ {{ project.title }} ]({{ project.url }})
 {% endfor %}

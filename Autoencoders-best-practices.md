@@ -22,7 +22,7 @@ This report is going to discuss some of the modern best practices found in other
 
 # Modern Best Practices
 ## Transfer Learning
-With the success of many deep learning models, from 29/38 teams competing in the 2017 ImageNet Competition <sup>[4](#imageNetFootNote)</sup> achieving an accuracy of greater than 95% [4][5] to beating the human world champion in Go [6]. Deep learning models are built and trained daily by leading teams from Google and other companies, creating such accurate models requires extensive research, skills and computing power.
+With the success of many deep learning models, from 29/38 teams competing in the 2017 ImageNet Competition <sup>[1](#imageNetFootNote)</sup> achieving an accuracy of greater than 95% [4][5] to beating the human world champion in Go [6]. Deep learning models are built and trained daily by leading teams from Google and other companies, creating such accurate models requires extensive research, skills and computing power.
 
 _Transfer learning_ is the use of applying one neural network to a new problem, the hope is that the learned architecture can be applied to a new problem. This technique has been proven efficient, especially in image classification where pretrained ImageNet models are transferred and fine-tuned to new image datasets achieve high accuracy [7]. The main benefits to transfer learning are seen when there is a _lack of data_ or when there is a _lack of computing power_.
 

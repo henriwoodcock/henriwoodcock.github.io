@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: Applying Modern Best Practices to Autoencoders
 mathjax: true
 ---

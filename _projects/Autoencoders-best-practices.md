@@ -1,7 +1,6 @@
 ---
 layout: project
 title: Applying Modern Best Practices to Autoencoders
-permalink: /autoencoders-best-practices
 mathjax: true
 ---
 # Introduction

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Applying Modern Best Practices to Autoencoders
-permalink: /autoencoders-best-practices/
+permalink: /autoencoders-best-practices
 mathjax: true
 ---
 

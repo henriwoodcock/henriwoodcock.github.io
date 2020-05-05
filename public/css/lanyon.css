@@ -598,12 +598,13 @@ img + em {
 }
 
 figure {
-    margin: 2px;
+    margin: 0;
     text-align: center;  /* ADD Me */
     font-size: 8px;
 }
 
 figcaption {
+  margin: 10px;
   text-align: center;
   font-size: .8rem;
   font-style: italic;

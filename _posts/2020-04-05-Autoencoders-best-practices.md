@@ -3,7 +3,7 @@ layout: post
 title: Applying Modern Best Practices to Autoencoders
 mathjax: true
 project: true
-summary: Applying best practices in other areas of image research to autoencoders. 5 models are compared: Pixel Shuffle, Feature Loss, Progressive Resizing, Nearest-Neighbour upsampling, Transfer Learning. Click [here](https://github.com/henriwoodcock/Applying-Modern-Best-Practices-to-Autoencoders) for the corresponding Github repository.
+summary: Applying best practices in other areas of image research to autoencoders. 5 models are compared: Pixel Shuffle, Feature Loss, Progressive Resizing, Nearest-Neighbour upsampling, Transfer Learning.
 
 ---
 # Introduction

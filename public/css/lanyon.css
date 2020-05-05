@@ -577,6 +577,6 @@ a.pagination-item:hover {
   color: #55acee;
 }
 
-img + em { 
-  display: block; text-align: center;
+img + em {
+  display: block; text-align: center; margin-left: auto; margin-right: auto;
 }

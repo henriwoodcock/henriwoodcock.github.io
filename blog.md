@@ -7,7 +7,7 @@ title: Blog
   {% if post.project == null %}
   ### [ {{ post.title }} ]({{ post.url }})
   <h3>
-    <a href="{{ site.baseurl }{{ post.url }}">
+    <a href="{{ site.baseurl }}{{ post.url }}">
       {{ post.title }}
       <small>{{ post.date | date_to_string }}</small>
     </a>

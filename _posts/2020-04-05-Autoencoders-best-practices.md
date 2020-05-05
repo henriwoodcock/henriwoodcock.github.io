@@ -3,6 +3,7 @@ layout: post
 title: Applying Modern Best Practices to Autoencoders
 mathjax: true
 project: true
+summary: Applying best practices in other areas of image research to autoencoders. 5 models are compared: Pixel Shuffle, Feature Loss, Progressive Resizing, Nearest-Neighbour upsampling, Transfer Learning.
 ---
 # Introduction
 An _autoencoder_ is a neural network which learns to recreate its input usually through some bottleneck. Autoencoders have been an interest in research in deep learning since the 80s [1]. Creating a bottleneck means that autoencoders are built for dimensionality reduction, however have also been used for anomaly detection [2], neural network pretraining [3] and more.

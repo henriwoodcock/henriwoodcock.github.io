@@ -1,6 +1,4 @@
-<div class="image-wrapper" >
-    <img src="{{ site.url }}/{{ include.img }}" alt="{{ include.description }}"/>
-    {% if include.description %}
-        <p class="image-caption">{{ include.description }}</p>
-    {% endif %}
-</div>
+<figure class="image">
+  <img src="{{ include.url }}" alt="{{ include.description }}",>
+  <figcaption><em>{{ include.description }}</em></figcaption>
+</figure>

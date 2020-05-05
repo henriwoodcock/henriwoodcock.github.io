@@ -598,26 +598,13 @@ img + em {
 }
 
 figure {
-    margin: 12px;
     text-align: center;  /* ADD Me */
     font-size: 8px;
 }
 
 figcaption {
-  margin: 12px;
   text-align: center;
   font-size: .8rem;
   font-style: italic;
   color: light-grey;
-}
-
-.image-wrapper {
-    text-align: center;
-    font-size: .8rem;
-    font-style: italic;
-    color: light-grey;
-    .image-caption {
-        color: $grey-color;
-        margin-top: $spacing-unit / 3;
-    }
 }

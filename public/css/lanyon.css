@@ -590,13 +590,6 @@ img + em {
   margin-right: auto;
 }
 
-.center-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 figure {
     text-align: center;  /* ADD Me */
     font-size: 8px;

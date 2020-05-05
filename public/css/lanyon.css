@@ -576,3 +576,7 @@ a.pagination-item:hover {
 .social-link:hover {
   color: #55acee;
 }
+
+img + em { 
+  display: block; text-align: center;
+}

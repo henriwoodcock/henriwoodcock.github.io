@@ -7,8 +7,24 @@ description: This project applies best modern practices found in other areas of 
 ---
 
 <div class="message">
-  This project applies best modern practices found in other areas of image research to autoencoders. For the corresponding Github repository click <a href="https://github.com/henriwoodcock/Applying-Modern-Best-Practices-to-Autoencoders">here</a>
+  This project applies best modern practices found in other areas of image research to autoencoders. For the corresponding Github repository click <a href="https://github.com/henriwoodcock/Applying-Modern-Best-Practices-to-Autoencoders">here</a>.
 </div>
+
+# Contents
+- [Introduction](#introduction)
+- [Modern Best Practices](#modern-best-practices)
+  - [Transfer Learning](#transfer-learning)
+  - [Feature Loss](#feature-loss)
+  - [Pixel Shuffle](#pixel-shuffle)
+  - [Progressive Resizing](#progressive-resizing)
+- [Experiment](#experiment)
+  - [Models](#models)
+  - [Measures](#measures)
+  - [Results](#results)
+  - [Discussion](#discussion)
+- [Conclusion](#conclusion)
+  - [Further Research](#further-research)
+- [References](#references)
 
 # Introduction
 An _autoencoder_ is a neural network which learns to recreate its input usually through some bottleneck. Autoencoders have been an interest in research in deep learning since the 80s [1]. Creating a bottleneck means that autoencoders are built for dimensionality reduction, however have also been used for anomaly detection [2], neural network pretraining [3] and more.

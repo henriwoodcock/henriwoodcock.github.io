@@ -596,3 +596,7 @@ img + em {
   margin-right: auto;
   width: 50%;
 }
+
+figcaption {
+    text-align: center;  /* ADD Me */
+}

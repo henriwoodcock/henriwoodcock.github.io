@@ -3,6 +3,7 @@ layout: post
 title: Applying Modern Best Practices to Autoencoders
 mathjax: true
 project: true
+description: This project applies best modern practices found in other areas of image research to autoencoders.
 ---
 
 <div class="message">

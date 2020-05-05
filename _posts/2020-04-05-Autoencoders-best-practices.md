@@ -3,7 +3,7 @@ layout: post
 title: Applying Modern Best Practices to Autoencoders
 mathjax: true
 project: true
-description: This project applies best modern practices found in other areas of image research to autoencoders. Comparing 5 models which proved effective in other areas of image research. Techniques used are: transfer learning, feature loss, pixel shuffle, progressive resizing and nearest-neighbour upsampling.
+description: This project applies best modern practices found in other areas of image research to autoencoders. Comparing 5 models which proved effective in other areas of image research.
 ---
 
 <div class="message">

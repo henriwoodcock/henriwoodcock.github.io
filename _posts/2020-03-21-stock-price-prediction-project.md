@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Machine and Deep Learning for Stock Price Prediction: Comparison of Classification and Regression Techniques
+title: Machine and Deep Learning for Stock Price Prediction
 mathjax: true
 project: true
 description: Comparison of treating stock price prediction as a classification or regression problem. This report formed part of my 3rd research project at the University of Leeds.

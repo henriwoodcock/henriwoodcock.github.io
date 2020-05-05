@@ -8,9 +8,8 @@ title: Blog
   ### [ {{ post.title }} ]({{ post.url }})
   <h3>
     <a href="{{ site.baseurl }}{{ post.url }}">
-      {{ post.title }}
-      <small>{{ post.date | date_to_string }}</small>
-    </a>
+      {{ post.title }} </a>
+      <small><small>{{ post.date | date_to_string }}</small></small>
   </h3>
   <span> A little description of the post </span>
   <span class="post-date"> <small><small>{{ post.date | date_to_string }}</small></small></span>

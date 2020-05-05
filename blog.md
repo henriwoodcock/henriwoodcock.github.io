@@ -5,7 +5,7 @@ title: Blog
 
 {% for post in site.posts %}
   {% if post.project == null %}
-  <span><h3 display: inline><a href="{{ post.url }}">{{ post.title }}</a></h3></span><span class="post-date" display: inline> <small><small>{{ post.date | date_to_string }}</small></small></span>
+  <span><h3 display: inline><a href="{{ post.url }}">{{ post.title }}</a></h3></span><span class="post-date"; display: inline;> <small><small>{{ post.date | date_to_string }}</small></small></span>
   ### [ {{ post.title }} ]({{ post.url }}) {{ post.date | date_to_string }}
   <span> A little description of the post </span>
   <span class="post-date"> <small><small>{{ post.date | date_to_string }}</small></small></span>

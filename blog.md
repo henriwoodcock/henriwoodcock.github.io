@@ -7,6 +7,6 @@ title: Blog
   {% if post.project == null %}
   ### [ {{ post.title }} ]({{ post.url }})
   A little description of the post
-  {{ post.date | date_to_string }}
+  <span class="post-date"><small>{{ page.date | date_to_string }}</small></span>
   {% endif %}
 {% endfor %}

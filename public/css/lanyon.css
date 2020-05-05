@@ -597,6 +597,11 @@ img + em {
   width: 50%;
 }
 
+figure {
+    margin: 0;
+    text-align: center;  /* ADD Me */
+}
+
 figcaption {
     text-align: center;  /* ADD Me */
 }

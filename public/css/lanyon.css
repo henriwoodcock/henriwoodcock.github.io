@@ -605,4 +605,5 @@ figure {
 figcaption {
     margin: 10px;
     text-align: center;  /* ADD Me */
+    font-size: 62.5%;
 }

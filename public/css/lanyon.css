@@ -605,3 +605,12 @@ figcaption {
 .item {
   float: left;
 }
+
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none; }
+#nav li {
+	float: left; }

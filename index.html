@@ -21,25 +21,23 @@ title: Home
       </span>
     </a>
   </p>
-  <nav class="nav-home">
-    <ul class="list">
-      <li class="item">
+    <ul id="nav">
+      <li>
         <a class="link" href="{{ site.url }}">Home</a>
       </li>
-      <li class="item">
+      <li>
         <a class="link" href="{{ site.url }}/about">About</a>
       </li>
-      <li class="item">
+      <li>
         <a class="link" href="{{ site.url }}/blog">Blog</a>
       </li>
-      <li class="item">
+      <li>
         <a class="link" href="{{ site.url }}/projects">Projects</a>
       </li>
-      <li class="item">
+      <li>
         <a class="link" href="{{ site.url }}/cv">CV</a>
       </li>
     </ul>
-  </nav>
 
   {% for post in paginator.posts %}
   <div class="post">

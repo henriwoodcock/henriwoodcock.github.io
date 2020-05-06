@@ -606,8 +606,8 @@ figcaption {
   float: left;
 }
 
-
-ul {
+.nav{}
+.nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -615,11 +615,11 @@ ul {
   display: inline-block;
 }
 
-li {
+.nav li {
   float: left;
 }
 
-li a {
+.nav li a {
   display: block;
   text-align: center;
   padding: 14px ;

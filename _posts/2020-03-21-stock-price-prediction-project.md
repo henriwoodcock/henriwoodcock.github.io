@@ -6,6 +6,8 @@ project: true
 description: Comparison of treating stock price prediction as a classification or regression problem. This report formed part of my 3rd research project at the University of Leeds.
 ---
 
+# Machine and Deep Learning for Stock Price Prediction: Comparison of Classification and Regression Techniques
+
 <div class="message">
   The objective of this report is to compare the use of classification models and regression models from Machine and Deep Learning are used to predict the price trend of a stock. For the corresponding Github repository click <a href="https://github.com/henriwoodcock/Stock-Price-Prediction">here</a>. You can also view the <b>full</b> report which formed part of my degree as a pdf <a href="{{ site.url }}/downloads/Henri Woodcock - Math3001.pdf">here</a>.
 </div>

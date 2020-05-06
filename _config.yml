@@ -11,7 +11,7 @@ description:         ''
 url:                 http://henriwoodcock.github.io
 markdown:            GFM
 baseurl:             ''
-paginate:            5
+paginate:            1
 
 # About/contact
 author:

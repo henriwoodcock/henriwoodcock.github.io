@@ -21,26 +21,28 @@ title:
       </span>
     </a>
   </p>
-  <nav class="nav-home">
-    <ul class="list">
-    <li class="item">
-      <a class="link" href="{{ site.url }}">Home</a>
-    </li>
-      <li class="item">
+</div>
+
+<center>
+    <ul>
+      <li>
+        <a class="link" href="{{ site.url }}">Home</a>
+      </li>
+      <li>
         <a class="link" href="{{ site.url }}/about">About</a>
       </li>
-      <li class="item">
+      <li>
         <a class="link" href="{{ site.url }}/blog">Blog</a>
       </li>
-      <li class="item">
+      <li>
         <a class="link" href="{{ site.url }}/projects">Projects</a>
       </li>
-      <li class="item">
-        <a class="link" href="">CV</a>
+      <li>
+        <a class="link" href="{{ site.url }}/cv">CV</a>
       </li>
     </ul>
-  </nav>
-</div>
+</center>
+
 
 _Last updated 6th May 2020._
 

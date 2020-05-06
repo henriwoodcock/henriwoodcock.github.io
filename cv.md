@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title:
 ---
 
 <div class="posts">
@@ -23,6 +23,9 @@ title:
   </p>
   <nav class="nav-home">
     <ul class="list">
+    <li class="item">
+      <a class="link" href="{{ site.url }}">Home</a>
+    </li>
       <li class="item">
         <a class="link" href="{{ site.url }}/about">About</a>
       </li>

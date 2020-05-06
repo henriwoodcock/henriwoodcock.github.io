@@ -611,12 +611,8 @@ figcaption {
 	float: left;
 	margin: 0 0 3em 0;
 	padding: 0;
-	list-style: none; }
-
+	list-style: none;
+}
 #nav li {
-	float: left; }
-
-#nav li a {
-		display: block;
-		padding: 8px 15px;
-		border-right: 1px solid #ccc; }
+	float: left;
+}

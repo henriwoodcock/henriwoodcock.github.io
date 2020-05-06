@@ -22,6 +22,7 @@ The objective of this report is to compare the use of classification models and 
   - [Pixel Shuffle](#pixel-shuffle)
   - [Progressive Resizing](#progressive-resizing)
 - [Experiment](#experiment)
+  - [Literature Review](#literature-review)
   - [Models](#models)
   - [Measures](#measures)
   - [Results](#results)

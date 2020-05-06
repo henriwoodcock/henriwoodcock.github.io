@@ -30,6 +30,7 @@ The objective of this report is to compare the use of classification models and 
 - [Conclusion](#conclusion)
   - [Further Research](#further-research)
 - [References](#references)
+- [A1 Trading Strategies](#a1-trading-strategies)
 
 # Introduction
 Time series prediction has always been of interest especially in finance, the ability to be able to predict the price movements of a stock correctly can lead to an investor being able to make profits with no limit. Machine and Deep learning are growing fields in computer science, in which artificial learning techniques are used to find patterns in data. Deep learning can find relationships between asset returns no matter how complex and nonlinear [1], this can lead to predictions being made from deeper meaningful relationships between assets returns. This has led to an increase in the interest in Machine and Deep Learning techniques in finance, this report will be explaining Machine and Deep Learning from a financial time series perspective to discuss which models work well for time series prediction and how models are trained before finally comparing different models for stock price prediction.

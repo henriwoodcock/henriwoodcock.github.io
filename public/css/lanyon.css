@@ -606,19 +606,22 @@ figcaption {
   float: left;
 }
 
-#nav {
-	width: 100%;
-	float: left;
-	margin: 0 0 3em 0;
-	padding: 0;
-	list-style: none;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   display: inline-block;
 }
-#nav li {
-	float: left;
+
+li {
+  float: left;
 }
 
-#nav li a {
-  padding: 16px;
+li a {
+  display: block;
   text-align: center;
+  padding: 14px ;
+  text-decoration: none;
 }

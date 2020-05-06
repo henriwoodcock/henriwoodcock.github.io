@@ -601,3 +601,7 @@ figcaption {
   font-style: italic;
   color: light-grey;
 }
+
+.item {
+  float: left;
+}

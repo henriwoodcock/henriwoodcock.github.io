@@ -11,7 +11,7 @@ description: Step by step guide to implementing an autoencoder in fastai.
 This post is going to cover how to set up an _autoencoder_ in fastai. This will go through creating a basic autoencoder model, setting up the data in fastai, and finally putting all this together into a learner model.
 
 _Note: a basic understanding of fastai and PyTorch is assumed._
-
+<br/><br/>
 # Implementation
 ## Setting Up the Data
 An autoencoder is a neural network that learns to recreate the input through some type of bottleneck in the architecture. To set this up we need a fastai databunch in which the input and output are equal.
@@ -89,7 +89,7 @@ data.show_batch(rows = 1)
   <figcaption class="center">data.show_batch(rows = 1) output. Images taken from the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR10 Dataset.</a></figcaption>
 </figure>
 
-
+<br/><br/>
 ## Creating the Model
 We now need to create an autoencoder model. This is done by creating a PyTorch module. Below is a basic example taken from [here](https://github.com/jellycsc/PyTorch-CIFAR-10-autoencoder/blob/master/main.py).
 
@@ -127,7 +127,7 @@ class Autoencoder(nn.Module):
         decoded = self.decoder(encoded)
         return decoded
 {% endhighlight %}
-
+<br/><br/>
 ## Creating a Fastai Learner
 Now we put all this together into a fastai learner. To do this you need to define a loss function, I will be using MSE loss for this example.
 
@@ -143,7 +143,7 @@ learn = Learner(data, autoencoder, loss_func = F.mse_loss)
 {% endhighlight %}
 
 Now we have done this we can easily utilise all the best training practices incorporated in fastai such as _lr_find_ and _fit_one_cycle_.
-
+<br/><br/>
 ## Training
 All the techniques implemented in fastai can now be used on your custom autoencoder.
 
@@ -151,7 +151,7 @@ All the techniques implemented in fastai can now be used on your custom autoenco
 learn.lr_find()
 learn.fit_one_cycle()
 {% endhighlight %}
-
+<br/><br/>
 ## Example Results
 Using the fastai library I trained 10 epochs on a subset of the [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) using lr_find to find an optimal learning rate and fit_one_cycle and achieved the following results:
 
@@ -159,7 +159,7 @@ Using the fastai library I trained 10 epochs on a subset of the [CIFAR10](https:
   <img src="/assets/post_images/autoencoders_in_fastai/training_show_results.png" alt="Training Results" class="center"/>
   <figcaption class="center">Results from 10 epochs using the fastai library.</figcaption>
 </figure>
-
+<br/><br/>
 # Conclusion
 Here I have presented a simple overview of how to implement an autoencoder in fastai, you can find the notebook [here](https://github.com/henriwoodcock/blog-post-codes/blob/master/autoencoders-in-fastai/autoencoders-in-fastai.ipynb) which includes all the code as well as how to implement this for a general array dataset. There is also information on how to use the encoder and decoder part once the autoencoder has been trained.
 

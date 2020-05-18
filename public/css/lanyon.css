@@ -323,6 +323,16 @@ a.sidebar-nav-item:focus {
   margin-top: 0;
 }
 
+.page-title2,
+.post-title2,
+.post-title2 a {
+  color: #268bd2;
+}
+.page-title2,
+.post-title2 {
+  margin-top: 0;
+}
+
 /* Meta data line below post title */
 .post-date {
   display: block;

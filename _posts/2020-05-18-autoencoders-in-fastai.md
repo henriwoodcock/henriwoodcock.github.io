@@ -4,7 +4,6 @@ title: Implementing Autoencoders in the Fastai Library
 mathjax: true
 description: Step by step guide to implementing an autoencoder in fastai.
 ---
-## Step by step guide to implementing an autoencoder in fastai.
 
 # Introduction
 [fastai](https://docs.fast.ai/index.html) is a deep learning library that simplifies training neural networks using modern best practices [1]. While fastai provides users with a high-level neural network API, it is designed to allow researchers and users to easily mix in low-level methods while still making the overall training process as easy and accessible to all.

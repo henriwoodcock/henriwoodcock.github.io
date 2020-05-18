@@ -5,6 +5,12 @@ mathjax: true
 description: Step by step guide to implementing an autoencoder in fastai.
 ---
 
+<figure>
+  <img src="/assets/images/nn.png" alt="nn_svg" class="center"/>
+  <figcaption class="center">data.show_batch(rows = 1) output. Images taken from the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR10 Dataset.</a></figcaption>
+</figure>
+
+
 # Introduction
 [fastai](https://docs.fast.ai/index.html) is a deep learning library that simplifies training neural networks using modern best practices [1]. While fastai provides users with a high-level neural network API, it is designed to allow researchers and users to easily mix in low-level methods while still making the overall training process as easy and accessible to all.
 
@@ -83,7 +89,6 @@ And running show_batch gives:
 data.show_batch(rows = 1)
 {% endhighlight %}
 
-![show_batch_code](/assets/post_images/autoencoders_in_fastai/show_batch.png)
 <figure>
   <img src="/assets/post_images/autoencoders_in_fastai/show_batch.png" alt="show_batch" class="center"/>
   <figcaption class="center">data.show_batch(rows = 1) output. Images taken from the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR10 Dataset.</a></figcaption>

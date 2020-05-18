@@ -9,7 +9,7 @@ title: Blog
     <a href="{{ site.baseurl }}{{ post.url }}">
       {{ post.title }} </a>
   </h3>
-  <span> A little description of the post </span>
+  <span> {{ post.description }} </span>
   <span class="post-date"> <small><small>{{ post.date | date_to_string }}</small></small></span>
   {% endif %}
 {% endfor %}

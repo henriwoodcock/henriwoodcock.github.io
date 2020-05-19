@@ -10,6 +10,10 @@ description: Step by step guide to implementing an autoencoder in fastai.
   <figcaption class="center">Autoencoder Architecture. Image made using <a href="https://alexlenail.me/NN-SVG/LeNet.html">NN-SV.</a>.</figcaption>
 </figure>
 
+<div class="message">
+  This post is also available on towardsdatascience <a href="https://towardsdatascience.com/autoencoders-in-the-fastai-library-fa288e1f899a">here</a>.
+</div>
+
 
 # Introduction
 [fastai](https://docs.fast.ai/index.html) is a deep learning library that simplifies training neural networks using modern best practices [1]. While fastai provides users with a high-level neural network API, it is designed to allow researchers and users to easily mix in low-level methods while still making the overall training process as easy and accessible to all.

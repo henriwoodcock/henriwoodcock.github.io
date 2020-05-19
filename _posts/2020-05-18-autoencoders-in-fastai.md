@@ -7,7 +7,7 @@ description: Step by step guide to implementing an autoencoder in fastai.
 
 <figure>
   <img src="/assets/images/nn.png" alt="nn_svg" class="center"/>
-  <figcaption class="center">data.show_batch(rows = 1) output. Images taken from the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR10 Dataset.</a></figcaption>
+  <figcaption class="center">Autoencoder Architecture. Image made using <a href="https://alexlenail.me/NN-SVG/LeNet.html">NN-SV.</a>.</figcaption>
 </figure>
 
 

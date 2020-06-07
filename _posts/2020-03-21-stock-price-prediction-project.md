@@ -72,7 +72,8 @@ For the classification data set, the output, $y\_{i}$ at each time step was crea
 $$
 y_{i} =
     \begin{cases}
-      1, & \text{if}\ S_{i+1} > S_{i} \\
+      1, & \text{if}\ S_{i+1} > S_{i}
+       \\
       0, & \text{otherwise}
     \end{cases}
 $$
@@ -91,7 +92,8 @@ The models will compare the models using 3 different prediction performances. Th
 $$
 \text{trend}\_{i} =
     \begin{cases}
-      1, & \text{if}\ \hat{y}\_{i} > S\_{i} \\
+      1, & \text{if}\ \hat{y\_{i}} > S\_{i} \\
+
       0, & \text{otherwise}
     \end{cases}
 $$
@@ -100,6 +102,7 @@ $$
 \text{hit}\_{i} =
     \begin{cases}
       1, & \text{if}\ \text{trend}\_{i} = \text{actual trend}\_{i} \\
+      
       0, & \text{otherwise}
     \end{cases}
 $$

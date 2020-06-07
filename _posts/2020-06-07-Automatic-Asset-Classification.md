@@ -3,7 +3,7 @@ layout: post
 title: Automatic Asset Classification
 mathjax: true
 project: true
-description: Using neural networks to classify flood defence assets. With clistering to find underlying attributes.
+description: This project uses neural networks to classify flood defence assets and achieves an accuracy of 90%. Clustering is then used to extend this with underlying asset attributes.
 ---
 
 <div class="message">

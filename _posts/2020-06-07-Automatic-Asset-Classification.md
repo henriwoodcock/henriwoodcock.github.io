@@ -12,7 +12,7 @@ description: This project uses neural networks to classify flood defence assets 
 
 # Key Takeaways:
 - Asset recognition proves high accuracy through the use of transfer learning.
-- An experimental idea to allow algorithms to cluster assets to find underlying attributes to the assets.
+- An experiment to use clustering algorithms to find assets with similar underlying attributes.
 
 # Contents
 - [Introduction](#introduction)

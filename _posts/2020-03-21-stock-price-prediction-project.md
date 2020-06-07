@@ -3,6 +3,7 @@ layout: post
 title: Machine and Deep Learning for Stock Price Prediction
 mathjax: true
 project: true
+hidden: true
 description: Comparison of treating stock price prediction as a classification or regression problem. This report formed part of my 3rd research project at the University of Leeds.
 ---
 
@@ -102,7 +103,7 @@ $$
 \text{hit}\_{i} =
     \begin{cases}
       1, & \text{if}\ \text{trend}\_{i} = \text{actual trend}\_{i} \\
-      
+
       0, & \text{otherwise}
     \end{cases}
 $$

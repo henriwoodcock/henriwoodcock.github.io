@@ -31,7 +31,7 @@ The objective of this report was to compare the use of classification and regres
 
 -------------
 ## Skills
-- Programming Languages: Python, R, SQL
+- Programming Languages: Python, R, SQL, C++
 - Machine and Deep Learning: sklearn, PyTorch, Tensorflow, Keras, NumPy, Pandas
 - Statistics: Bayesian, Time Series, Statistical inference, Modelling
 ## Interests

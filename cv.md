@@ -3,7 +3,7 @@ layout: page
 title:
 ---
 
-_Last updated 6th May 2020._
+_Last updated 19th June 2020._
 
 ## Education
 2016 - 2019: BSc Mathematics with Finance, _University of Leeds_.

@@ -35,3 +35,8 @@ The objective of this report was to compare the use of classification and regres
 - Machine and Deep Learning: sklearn, PyTorch, Tensorflow, Keras, NumPy, Pandas
 - Statistics: Bayesian, Time Series, Statistical inference, Modelling
 ## Interests
+- Music: I use to produce my own music with songs played on BBC Radio Sheffield, and over 1000 downloads on Soundcloud.
+- Football: Take part in a five-a-side football league.
+- Graphic design: Creating logos and website designs for friends’ projects.
+- Guitar: Learning songs and experimenting to create my own.
+- Record collecting

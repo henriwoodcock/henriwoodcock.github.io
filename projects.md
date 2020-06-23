@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projects
+liner: My personal projects 
 ---
 
 {% for post in site.posts %}

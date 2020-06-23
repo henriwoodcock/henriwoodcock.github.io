@@ -5,23 +5,9 @@ layout: default
 {% include mathjax.html %}
 <div class="posts">
 
-  <h1 style="text-align:center"> Henri Woodcock </h1>
-  <p style="text-align:center">Hello and welcome to my site, here you can find my projects and blog posts. </p>
-  <p class="social-links">
-    <a href="https://github.com/henriwoodcock" class="social-link">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-    <a href="https://www.linkedin.com/in/henri-woodcock-682338155/" class="social-link">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-  </p>
-</div>
+  <h1 style="text-align:center"> {{ page.title }} </h1>
+  <p style="text-align:center"> {{ page.liner}} </p>
+
 
 <div class = "nav">
 <center>
@@ -48,6 +34,23 @@ layout: default
 <hr>
 
 <div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
   {{ content }}
+</div>
+
+<hr>
+
+<p class="social-links">
+  <a href="https://github.com/henriwoodcock" class="social-link">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
+  <a href="https://www.linkedin.com/in/henri-woodcock-682338155/" class="social-link">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
+</p>
 </div>

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog
+liner: I like to write about Data Science to coding.
 ---
 
 {% for post in site.posts %}

@@ -1,6 +1,6 @@
 ---
 layout: page
-title:
+title: Curriculum Vitae
 ---
 
 _Last updated 19th June 2020._

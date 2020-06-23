@@ -169,6 +169,7 @@ Using the fastai library I trained 10 epochs on a subset of the [CIFAR10](https:
   <figcaption class="center">Results from 10 epochs using the fastai library.</figcaption>
 </figure>
 <br/><br/>
+
 # Conclusion
 Here I have presented a simple overview of how to implement an autoencoder in fastai, you can find the notebook [here](https://github.com/henriwoodcock/blog-post-codes/blob/master/autoencoders-in-fastai/autoencoders-in-fastai.ipynb) which includes all the code as well as how to implement this for a general array dataset. There is also information on how to use the encoder and decoder part once the autoencoder has been trained.
 

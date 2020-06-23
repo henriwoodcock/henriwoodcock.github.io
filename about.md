@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+liner: Hi
 ---
 
 I am currently a data scientist in strategic consulting at Jacobs Engineering. My current interests are Machine Learning, Deep Learning and automation in strategic consulting.
@@ -14,20 +15,3 @@ email: henriwoodcock@gmail.com
 [email](mailto:henriwoodcock@gmail.com) me.
 
 Checkout my [GitHub](https://github.com/henriwoodcock) or [Linkedin](https://www.linkedin.com/in/henri-woodcock-682338155/).
-
-------------
-
-<p class="social-links">
-  <a href="https://github.com/henriwoodcock" class="social-link">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-  <a href="https://www.linkedin.com/in/henri-woodcock-682338155/" class="social-link">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</p>

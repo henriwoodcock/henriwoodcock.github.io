@@ -2,9 +2,11 @@
 layout: post
 title: C++ for Pythonistas and Data Scientists
 mathjax: true
-description: Setting up Cling to help learn C++
+description: Setting up Cling to help learn C++.
 ---
 > An introduction to Cling to help learn C++
+
+<br>
 
 <div class="message">
   This post is also available on towardsdatascience <a href="https://towardsdatascience.com/c-for-pythonistas-and-data-scientists-2e1a74a7b8be">here</a>.

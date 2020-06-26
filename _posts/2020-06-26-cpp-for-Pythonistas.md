@@ -34,8 +34,6 @@ A basic C++ program for Hello, World! can be daunting and off putting for a Pyth
 
 {% highlight cpp %}
 #include <iostream>
-#include <vector>
-
 
 int main() {
  std::cout << "Hello, World!" << std::endl;

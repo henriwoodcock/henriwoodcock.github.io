@@ -5,6 +5,7 @@
 - Landing home page or just straight into posts?
 - Separate pages for posts?
 - favicon update
+- update descriptions underneath each page header
 
 
 ## Contents

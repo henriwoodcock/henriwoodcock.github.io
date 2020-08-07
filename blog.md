@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blog
-liner: I like to write about Data Science to coding.
+liner: A list of my blog posts.
 ---
 
 {% for post in site.posts %}

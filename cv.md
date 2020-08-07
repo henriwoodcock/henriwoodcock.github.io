@@ -3,7 +3,7 @@ layout: page
 title: Curriculum Vitae
 ---
 
-_Last updated 19th June 2020._
+_Last updated 7th August 2020._
 
 <h2 style="text-align:center">Henri Woodcock</h2>
 <p style="text-align: center;"> __Email__: henriwoodcock@gmail.com </p>
@@ -38,7 +38,7 @@ The objective of this report was to compare the use of classification and regres
 ## Skills
 - Programming Languages: Python, R, SQL, C++
 - Machine and Deep Learning: sklearn, PyTorch, Tensorflow, Keras, NumPy, Pandas
-- Statistics: Bayesian, Time Series, Statistical inference, Modelling
+- Statistics: Bayesian, Time Series, Statistical Inference, Modelling
 -----------------
 ## Interests
 Music (I use to produce my own music and had songs played on BBC Radio Sheffield!), Football (five-a-side), Guitar, Record collecting, learning and reading.

@@ -625,11 +625,11 @@ figcaption {
   display: inline-block;
 }
 
-.nav li {
+.nav ul li {
   float: left;
 }
 
-.nav li a {
+.nav ul li a {
   display: block;
   text-align: center;
   padding: 14px ;

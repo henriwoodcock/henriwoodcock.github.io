@@ -6,7 +6,7 @@ title: Curriculum Vitae
 _Last updated 7th August 2020._
 
 <h2 style="text-align:center">Henri Woodcock</h2>
-<p style="text-align: center;"> __Email__: henriwoodcock@gmail.com </p>
+<p style="text-align: center;"> <b>Email:</b> henriwoodcock@gmail.com </p>
 
 ### Education
 - University of Leeds, BSc Mathematics with Finance, 2016-2019. Grade __1st Class__

@@ -1,17 +1,19 @@
 ---
 layout: page
 title: About
-liner: Hi
+liner: Hi, welcome!
 ---
 
-I am currently a data scientist in strategic consulting at Jacobs Engineering. My current interests are Machine Learning, Deep Learning and automation in strategic consulting.
+I am currently a data scientist in strategic consulting.
 
-I received my BSc in Mathematics from the University of Leeds in 2019. My final year research project sparked my interest in machine and deep learning. My project was called 'Machine and Deep Learning for Stock Price Prediction: Comparison of Classification and Regression Techniques' and compared the different methods and approaches to predicting stock prices in finance, a summary of the report can be found [here](https://github.com/henriwoodcock/Stock-Price-Prediction/blob/master/report.pdf).
+On my website you can find:
+- <a class="link" href="{{ site.url }}/projects">My Projects</a>
+- <a class="link" href="{{ site.url }}/blog">My Blog</a>
+- <a class="link" href="{{ site.url }}/cv">My CV</a>
 
+You can also find my blog posts on [towardsdatascience](https://towardsdatascience.com/@henriwoodcock)
 
-_wip_
-
-email: henriwoodcock@gmail.com
-[email](mailto:henriwoodcock@gmail.com) me.
-
-Checkout my [GitHub](https://github.com/henriwoodcock) or [Linkedin](https://www.linkedin.com/in/henri-woodcock-682338155/).
+You can contact/find me at:
+- [email](mailto:henriwoodcock@gmail.com)
+- [GitHub](https://github.com/henriwoodcock)
+- [Linkedin](https://www.linkedin.com/in/henri-woodcock-682338155/).

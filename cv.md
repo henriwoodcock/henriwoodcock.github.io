@@ -20,7 +20,7 @@ _Last updated 7th August 2020._
     - Automation of identify linear assets from data of Thames Estuary. Usually looked through manually, I applied statistical concepts to find geospatial anomalies (assets). Big data, tens of millions of points analysed.
 -------------
 ### Projects
-- Automatic Asset Classification \[[Report](https://henriwoodcock.github.io/2020/06/07/Automatic-Asset-Classification/)/] \[[Github](https://github.com/henriwoodcock/automatic-asset-classification)\]
+- Automatic Asset Classification \[[Report](https://henriwoodcock.github.io/2020/06/07/Automatic-Asset-Classification/)\] \[[Github](https://github.com/henriwoodcock/automatic-asset-classification)\]
     - Classify flood defence assets to 90% accuracy.
     - Clustering algorithms applied to images to find underlying similarities which could lead to automating attributes to asset data.
 - Applying Modern Best Practices to Autoencoders \[[Report](https://henriwoodcock.github.io/2020/04/05/Autoencoders-best-practices/)\] \[[Github](https://github.com/henriwoodcock/Applying-Modern-Best-Practices-to-Autoencoders)\]

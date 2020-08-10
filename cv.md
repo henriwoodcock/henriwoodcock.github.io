@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: cv_layout
 title: Curriculum Vitae
 ---
-
 _Last updated 7th August 2020._
 
 <h2 style="text-align:center">Henri Woodcock</h2>

@@ -612,6 +612,10 @@ figcaption {
   color: light-grey;
 }
 
+.item {
+  float: left;
+}
+
 .nav{}
 .nav ul {
   list-style-type: none;

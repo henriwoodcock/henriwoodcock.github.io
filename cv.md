@@ -20,19 +20,19 @@ _Last updated 7th August 2020._
     - Automation of identify linear assets from data of Thames Estuary. Usually looked through manually, I applied statistical concepts to find geospatial anomalies (assets). Big data, tens of millions of points analysed.
 -------------
 ### Projects
-- Automatic Asset Classification \[[Report](https://henriwoodcock.github.io/2020/06/07/Automatic-Asset-Classification/) [Github](https://github.com/henriwoodcock/automatic-asset-classification)\]
+- Automatic Asset Classification \[[Report](https://henriwoodcock.github.io/2020/06/07/Automatic-Asset-Classification/)/] \[[Github](https://github.com/henriwoodcock/automatic-asset-classification)\]
     - Classify flood defence assets to 90% accuracy.
     - Clustering algorithms applied to images to find underlying similarities which could lead to automating attributes to asset data.
-- Applying Modern Best Practices to Autoencoders [Report](https://henriwoodcock.github.io/2020/04/05/Autoencoders-best-practices/) [Github](https://github.com/henriwoodcock/Applying-Modern-Best-Practices-to-Autoencoders)
+- Applying Modern Best Practices to Autoencoders \[[Report](https://henriwoodcock.github.io/2020/04/05/Autoencoders-best-practices/)\] \[[Github](https://github.com/henriwoodcock/Applying-Modern-Best-Practices-to-Autoencoders)\]
 
 This project applies some of the modern best practices found in other parts of image data research to autoencoders.
 
-- Machine and Deep Learning for Stock Price Prediction: Comparison of Classification and Regression Techniques [Report](https://henriwoodcock.github.io/2020/03/21/stock-price-prediction-project/) [Github](https://github.com/henriwoodcock/Stock-Price-Prediction)
+- Machine and Deep Learning for Stock Price Prediction: Comparison of Classification and Regression Techniques \[[Report](https://henriwoodcock.github.io/2020/03/21/stock-price-prediction-project/)\] \[[Github](https://github.com/henriwoodcock/Stock-Price-Prediction)\]
 The objective of this report was to compare the use of classification and regression models from Machine and Deep Learning to predict the price trend of a stock.
 -------------
 ### Technical Writing (Blog)
-- Implementing Autoencoders in the Fastai Library. Towards Data Science. [Available online](https://towardsdatascience.com/autoencoders-in-the-fastai-library-fa288e1f899a)
-- C++ for Pythonistas and Data Scientists. Towards Data Science. [Available online](https://towardsdatascience.com/c-for-pythonistas-and-data-scientists-2e1a74a7b8be)
+- Implementing Autoencoders in the Fastai Library. Towards Data Science. \[[Available online](https://towardsdatascience.com/autoencoders-in-the-fastai-library-fa288e1f899a)\]
+- C++ for Pythonistas and Data Scientists. Towards Data Science. \[[Available online](https://towardsdatascience.com/c-for-pythonistas-and-data-scientists-2e1a74a7b8be)\]
 ----------------
 ## Skills
 - Programming Languages: Python, R, SQL, C++

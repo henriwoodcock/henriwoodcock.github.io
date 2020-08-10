@@ -28,7 +28,6 @@ _Last updated 7th August 2020._
 This project applies some of the modern best practices found in other parts of image data research to autoencoders.
 
 - Machine and Deep Learning for Stock Price Prediction: Comparison of Classification and Regression Techniques [Report](https://henriwoodcock.github.io/2020/03/21/stock-price-prediction-project/) [Github](https://github.com/henriwoodcock/Stock-Price-Prediction)
-
 The objective of this report was to compare the use of classification and regression models from Machine and Deep Learning to predict the price trend of a stock.
 -------------
 ### Technical Writing (Blog)

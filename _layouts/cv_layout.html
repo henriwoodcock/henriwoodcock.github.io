@@ -3,10 +3,9 @@ layout: default
 ---
 
 <div class="post">
-
-  <h1 style="text-align:center"> {{ page.title }} </h1>
-  <p style="text-align:center"> {{ page.liner}} </p>
-
+  <h1 class="post-title">{{ page.title }}</h1>
+  {{ content }}
+</div>
 
 <div class = "nav">
 <center>
@@ -32,7 +31,7 @@ layout: default
 
   <hr>
 
-  <div class="page">
+  <div class="post">
     {{ content }}
   </div>
 

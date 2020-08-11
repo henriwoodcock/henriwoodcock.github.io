@@ -3,7 +3,6 @@ layout: page
 title: About
 liner: Hi, welcome!
 ---
-
 I am currently a data scientist in strategic consulting.
 
 On my website you can find:

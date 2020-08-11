@@ -5,12 +5,16 @@ liner: Hi, welcome!
 ---
 I am currently a data scientist in strategic consulting.
 
+<br>
+
 On my website you can find:
 - <a class="link" href="{{ site.url }}/projects">My Projects</a>
 - <a class="link" href="{{ site.url }}/blog">My Blog</a>
 - <a class="link" href="{{ site.url }}/cv">My CV</a>
 
-My blog posts are also availble on [towardsdatascience](https://towardsdatascience.com/@henriwoodcock).
+<br>
+
+My blog posts are also available on [towardsdatascience](https://towardsdatascience.com/@henriwoodcock).
 
 <br>
 

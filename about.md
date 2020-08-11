@@ -10,9 +10,11 @@ On my website you can find:
 - <a class="link" href="{{ site.url }}/blog">My Blog</a>
 - <a class="link" href="{{ site.url }}/cv">My CV</a>
 
-You can also find my blog posts on [towardsdatascience](https://towardsdatascience.com/@henriwoodcock)
+My blog posts are also availble on [towardsdatascience](https://towardsdatascience.com/@henriwoodcock).
+
+<br>
 
 You can contact/find me at:
-- [email](mailto:henriwoodcock@gmail.com)
+- [Email](mailto:henriwoodcock@gmail.com)
 - [GitHub](https://github.com/henriwoodcock)
 - [Linkedin](https://www.linkedin.com/in/henri-woodcock-682338155/).

@@ -4,6 +4,7 @@ title: Optimal Sample Size
 mathjax: true
 description: How to statistically calculate the optimal sample size in a binary distribution.
 ---
+> How to statistically calculate the optimal sample size in a binary distribution.
 
 # Introduction
 Finding the optimal sample size can be important for many different contexts, from collecting voting intentions in an election to assessing the quality of machinery in a company. Finding a sample which best represents a population can help reduce costs and time while also providing conclusions which can be applied to the entirety of the population.

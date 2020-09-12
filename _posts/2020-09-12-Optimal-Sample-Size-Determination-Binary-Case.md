@@ -80,6 +80,8 @@ Now the mathematical proof is done I will generate some data to give an hands-on
 
 {% gist 2f36eb31a6b21871cad3838ab20b032d %}
 
+<script src="https://gist.github.com/henriwoodcock/2f36eb31a6b21871cad3838ab20b032d.js"></script>
+
 # Further Reading
 - This post assumes the total population is unknown and infinite. If the total population is known there are ways to account for this: https://byjus.com/sample-size-formula/
 - For more on confidence intervals here is a good introduction https://towardsdatascience.com/understanding-confidence-interval-d7b5aa68e3b

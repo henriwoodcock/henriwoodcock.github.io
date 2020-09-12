@@ -72,7 +72,7 @@ Now, let's input some values. For a $95%$ confidence level, we want to set $z = 
 Putting all this together:
 $$ n > \frac{1.96^2}{(2\times 0.01)^2} $$
 
->For this example we can now say, __95% of samples of sample size greater than 9604 will contain the true proportion within an accuracy of 1%__.
+>For this example we can now say, _95% of samples of sample size greater than 9604 will contain the true proportion within an accuracy of 1%_.
 
 # Example
 Now the mathematical proof is done I will generate some data to give an hands-on example.

@@ -78,9 +78,7 @@ $$ n > \frac{1.96^2}{(2\times 0.01)^2} $$
 # Example
 Now the mathematical proof is done I will generate some data to give an hands-on example.
 
-{% raw %}
-<script src="https://gist.github.com/henriwoodcock/2f36eb31a6b21871cad3838ab20b032d.js"></script>
-{% endraw %}
+{% gist 2f36eb31a6b21871cad3838ab20b032d %}
 
 
 # Further Reading

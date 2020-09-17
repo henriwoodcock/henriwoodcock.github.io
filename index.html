@@ -5,6 +5,7 @@ title: Home
 {% include mathjax.html %}
 
 <div class="posts">
+  {% include mathjax.html %}
 
   <h1 style="text-align:center">Home</h1>
   <p style="text-align:center">Welcome to my site. Here you can find a collection of my projects and blog posts.</p>
@@ -41,6 +42,7 @@ title: Home
   {% for post in paginator.posts %}
   {% if post.project == null %}
   <div class="post">
+    {% include mathjax.html %}
     <h1 class="post-title2">
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}

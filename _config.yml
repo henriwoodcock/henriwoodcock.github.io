@@ -9,7 +9,8 @@ title:               Henri Woodcock
 tagline:             'Data Scientist'
 description:         ''
 url:                 http://henriwoodcock.github.io
-markdown:            GFM
+markdown:            kramdown
+mathjax:             true
 baseurl:             ''
 paginate:            1
 

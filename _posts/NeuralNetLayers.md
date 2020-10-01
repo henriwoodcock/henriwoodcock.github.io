@@ -2,7 +2,7 @@
 layout: post
 title: Neural Network Architecture Determination
 mathjax: true
-description: .
+description: Stop guessing the number of neurons in a layer!
 ---
 >
 
@@ -16,9 +16,11 @@ With tabular data it is usually understood that not many layers are required, on
 ## Determining The Number of Neurons
 The aim is to find the right number of neurons to prevent overfitting and underfitting, of course this is not the entire solution to prevent overfitting and underfitting but it can help reduce this from happening.
 
-In machine and deep learning, the degrees of freedom in a model relate to the number of parameters which can be learned. Increasing the degrees of freedom in your model can give it more flexibility to overfit to the data. One way to reduce the chance of overfitting is to limit the degrees of freedom in the model.
+In machine and deep learning, the degrees of freedom in a model relate to the number of parameters which can be _learned_. Increasing the degrees of freedom in your model can give it more flexibility to fit more complex functions, but too much and this flexibility could allow the model to overfit to the data.
 
-One formula found during research of this problem for neurons is:
+> This means one way to reduce overfitting is to limit the degrees of freedom in the model.
+
+One formula I found during research of this problem is:
 
 $$ N_{h} = \frac{N{s}}{\alpha (N_{i} + N_{o})} $$
 
@@ -33,3 +35,6 @@ An $\alpha$ value of 2-10 is recommended, and it is best to loop through to find
 A more nonlinear problem will need a larger $\beta$. The main part is to keep $\alpha \geq 1$ as this means the number of neurons are never greater than the degrees of freedom in the dataset.
 
 ## Example
+
+## References
+https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw

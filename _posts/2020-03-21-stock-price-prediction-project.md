@@ -70,14 +70,14 @@ Data used is daily closing price of KPN, AKZA, RAND, VPK, HEIA and the KPN tradi
 
 For the classification data set, the output, $y\_{i}$ at each time step was created as follows ($S\_{t}$ = closing price at time $t$):
 
-$$
+\(
 y_{i} =
     \begin{cases}
       1, & \text{if}\ S_{i+1} > S_{i}
        \\
       0, & \text{otherwise}
     \end{cases}
-$$
+\)
 where $S_{t}$ is the closing price at time $t$. 
 
 So the classification problem is attempting to predict the trend of the next timestep. For the regression problem, $y_{i} = S_{i+1}$ and so the regression models are attempting to predict the actual real value of the stock price at the next timestep.

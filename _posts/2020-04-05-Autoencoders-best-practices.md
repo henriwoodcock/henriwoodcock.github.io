@@ -33,7 +33,7 @@ An _autoencoder_ is a neural network which learns to recreate its input usually 
 <figure>
  <img src ="/assets/images/nn.png" alt="A simple autoencoder" class = "center"/>
  <figcaption> class="center">Figure 1: A Simple Autoencoder Architecture</figcaption>
- <figure>
+ </figure>
 
 
 An autoencoder can be thought of in two parts, an encoder and a decoder [1], the encoder takes in the input data $\mathbf{x}\_{i}$ and outputs a lower dimensional representation, call this $\mathbf{z}\_{i}$. The decoder takes as input $\mathbf{z}\_{i}$ and outputs the original input $\mathbf{x}\_{i}$.

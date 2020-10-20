@@ -96,7 +96,7 @@ The testing data input is standardised using the same \\( \mu\_{x} \\) and \\( \
 The models will compare the models using 3 different prediction performances. The first measure is the _hit ratio_. This measures how many times the models predict the next trend correctly. For regression models, the output will be converted into a trend by:
 
 \\[
-\text{trend}_{i} =
+\text{trend}\_{i} =
     \begin{cases}
       1, & \text{if}\ \hat{y_{i}} > S_{i} 
       \\

@@ -6,7 +6,10 @@ liner: My personal projects
 
 {% for post in site.posts %}
   {% if post.project %}
-  ### [ {{ post.title }} ]({{ post.url }})
+  <h3>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      {{ post.title }} </a>
+  </h3>
   <small> {{ post.description }} </small>
   {% endif %}
 {% endfor %}

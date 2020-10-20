@@ -33,12 +33,14 @@ To answer this we need a confidence interval for $p$.
 __Definition__: a $95%$ confidence interval for $p$ is an interval in which if we calculated the interval $100$ times, $95$ of them would contain the true value of $p$ for a given sample size $n$.
 
 For the general case, the formula for this is:
+
 $$ \hat{p} \pm z \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} $$
 
 Where $\hat{p}$ is our estimate for $p$ (what we are trying to find), $z$ represents a z-score from the normal distribution (for example 1.96 would relate to a $95$% z-score).
 
 ## Optimal Sample Size
 Now to calculate the optimal sample size we can look at it the other way and rearrange this formula to find $n$. First, let's expand the confidence interval:
+
 $$\hat{p} \in [-z\sqrt{\hat{p}(1-\hat{p})/n} , z\sqrt{\hat{p}(1-\hat{p})/n} ]$$
 
 Because we want to find $p$ to a high accuracy we will want to make this confidence interval smaller than a certain width (of your choice), let's call this width, $W$. Putting this together we get:
@@ -61,16 +63,20 @@ n > \frac{4z^2\hat{p}(1-\hat{p})}{W^2}
 $$
 
 This is a general formula that can be used if you already have a good estimate for $p$, however if not, this can be taken even further with an assumption. Let's look at the formula for the variance of a binomial distribution:
+
 $$\sigma = np(1-p)$$
 
 To encode our uncertainty we can maximise this variance, with $n$ held constant this is achieved by assuming a $p$ value of $0.5$. This now gives us:
+
 $$n > \frac{4z^2(0.5)(1-0.5)}{W^2}$$
 
 Which can be simplified to become:
+
 $$n > \frac{z^2}{W^2}$$
 
 Now, let's input some values. For a $95\%$ confidence level, we want to set $z = 1.96$ (from the standard normal distribution) and let $W = 0.02$. $W$ is the width of the confidence interval which means $W/2$ is the margin of error, so for this example I have a margin of error of $0.01$.
 Putting all this together:
+
 $$ n > \frac{1.96^2}{(2\times 0.01)^2} $$
 
 >For this example we can now say, _95% of samples of sample size greater than 9604 will contain the true proportion within an accuracy of 1%_.
@@ -78,9 +84,7 @@ $$ n > \frac{1.96^2}{(2\times 0.01)^2} $$
 # Example
 Now the mathematical proof is done I will generate some data to give an hands-on example.
 
-{% gist 2f36eb31a6b21871cad3838ab20b032d %} </script>
-
-{% gist c08ee0f2726fd0e3909d %}
+{% gist 2f36eb31a6b21871cad3838ab20b032d %}
 
 # Further Reading
 - This post assumes the total population is unknown and infinite. If the total population is known there are ways to account for this: https://byjus.com/sample-size-formula/

@@ -86,9 +86,9 @@ The data is then split into $6$ subsets and setup like K-fold validation for tim
 
 The input data ($\mathbf{X}$) for each fold is standardised, this is so all features have a mean of $0$ and variance of $1$, this makes training perform better as the algorithms are not skewed by features which are alot larger than others, for example volume traded $\gg$ close price (the data before preprocessing can be seen in [Appendix A1](#a1-trading-strategies). This is done by:
 
-$$
+\(
 \tilde{\mathbf{x}} = \frac{\mathbf{x} - \mu\_{x}}{\sigma\_{x}}
-$$
+\)
 
 The testing data input is standardised using the same $\mu\_{x}$ and $\sigma_{x}$ as the training data so that model knows how to use the data with respect to the training data.
 
@@ -124,7 +124,7 @@ where $m$ is the number of testing samples.
 The other two measures are the mean squared error (MSE) and the mean absolute error (MAE):
 
 $$
-\text{MSE} = \sum\_{i=1}^{m}(y\_{i} - \hat{y}\_{i})^2
+\text{MSE} = \sum_{i=1}^{m}(y\_{i} - \hat{y}\_{i})^2
 $$
 
 $$

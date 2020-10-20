@@ -68,13 +68,13 @@ The models are: SVM (and SVR), FFN (feedforward network), RNN (which uses an LST
 ## Data
 Data used is daily closing price of KPN, AKZA, RAND, VPK, HEIA and the KPN trading volume from the 4th Febuary 2008 to 16th January 2019 in the Amsterdam stock exchange, taken from Yahoo Finance [17], as well as technical indicators applied to the KPN price and trading volume which can be found in Appendix E. The use of multiple stock prices to predict one is inspired by [13]. The use of technical indicators was inspired by [6, 7] who were able to achieve high results with just the use of technical indicators.
 
-For the classification data set, the output, \\( y\_{i} \\) at each time step was created as follows ( \\(S\_{t}\\) = closing price at time \\( t\\)):
+For the classification data set, the output, \\( y_{i} \\) at each time step was created as follows ( \\(S\_{t}\\) = closing price at time \\( t\\)):
 
 \\[
 y_{i} =
     \begin{cases}
-      1, & \text{if}\ S_{i+1} > S_{i}
-       \\
+      1, & \text{if}\ S_{i+1} > S_{i} \\
+     \\
       0, & \text{otherwise}
     \end{cases}
 \\]
@@ -87,7 +87,7 @@ The data is then split into \\( 6 \\) subsets and setup like \\( K \\)-fold vali
 The input data (\\( \mathbf{X} \\)) for each fold is standardised, this is so all features have a mean of \\( 0 \\) and variance of \\( 1 \\), this makes training perform better as the algorithms are not skewed by features which are alot larger than others, for example volume traded \\( \gg \\) close price (the data before preprocessing can be seen in [Appendix A1](#a1-trading-strategies). This is done by:
 
 \\[
-\tilde{\mathbf{x}} = \frac{\mathbf{x} - \mu\_{x}}{\sigma\_{x}}
+\tilde{\mathbf{x}} = \frac{\mathbf{x} - \mu_{x}}{\sigma_{x}}
 \\]
 
 The testing data input is standardised using the same \\( \mu\_{x} \\) and \\( \sigma_{x} \\) as the training data so that model knows how to use the data with respect to the training data.
@@ -96,9 +96,9 @@ The testing data input is standardised using the same \\( \mu\_{x} \\) and \\( \
 The models will compare the models using 3 different prediction performances. The first measure is the _hit ratio_. This measures how many times the models predict the next trend correctly. For regression models, the output will be converted into a trend by:
 
 \\[
-\text{trend}\_{i} =
+\text{trend}_{i} =
     \begin{cases}
-      1, & \text{if}\ \hat{y\_{i}} > S\_{i} 
+      1, & \text{if}\ \hat{y_{i}} > S_{i} 
       \\
       0, & \text{otherwise}
     \end{cases}
@@ -107,16 +107,16 @@ The models will compare the models using 3 different prediction performances. Th
 i.e. a \\( 1 \\) is the model predicts that the next days closing price is higher than todays closing price. The hit ratio is calculated as follows:
 
 \\[
-\text{hit}\_{i} =
+\text{hit}_{i} =
     \begin{cases}
-      1, & \text{if}\ \text{trend}\_{i} = \text{actual trend}\_{i} 
+      1, & \text{if}\ \text{trend}_{i} = \text{actual trend}_{i} 
       \\
       0, & \text{otherwise}
     \end{cases}
 \\]
 
 \\[
-\text{hit ratio} = \frac{1}{m}\sum\_{i=1}^{m} \text{hit}\_{i}
+\text{hit ratio} = \frac{1}{m}\sum_{i=1}^{m} \text{hit}_{i}
 \\]
 
 where \\( m \\) is the number of testing samples.

@@ -78,47 +78,59 @@ y_{i} =
       0, & \text{otherwise}
     \end{cases}
 $$
-where $S_{t}$ is the closing price at time $t$. So the classification problem is attempting to predict the trend of the next timestep. For the regression problem, $y_{i} = S_{i+1}$ and so the regression models are attempting to predict the actual real value of the stock price at the next timestep.
+where $S_{t}$ is the closing price at time $t$. 
+
+So the classification problem is attempting to predict the trend of the next timestep. For the regression problem, $y_{i} = S_{i+1}$ and so the regression models are attempting to predict the actual real value of the stock price at the next timestep.
 
 The data is then split into $6$ subsets and setup like K-fold validation for time series discussed in the [previous section](#k-fold-validation), with each subset being 467 time steps.
 
 The input data ($\mathbf{X}$) for each fold is standardised, this is so all features have a mean of $0$ and variance of $1$, this makes training perform better as the algorithms are not skewed by features which are alot larger than others, for example volume traded $\gg$ close price (the data before preprocessing can be seen in [Appendix A1](#a1-trading-strategies). This is done by:
+
 $$
 \tilde{\mathbf{x}} = \frac{\mathbf{x} - \mu\_{x}}{\sigma\_{x}}
 $$
+
 The testing data input is standardised using the same $\mu\_{x}$ and $\sigma_{x}$ as the training data so that model knows how to use the data with respect to the training data.
 
 ## Performance Measures
 The models will compare the models using 3 different prediction performances. The first measure is the _hit ratio_. This measures how many times the models predict the next trend correctly. For regression models, the output will be converted into a trend by:
+
 $$
 \text{trend}\_{i} =
     \begin{cases}
-      1, & \text{if}\ \hat{y\_{i}} > S\_{i} \\
-
+      1, & \text{if}\ \hat{y\_{i}} > S\_{i} 
+      \\
       0, & \text{otherwise}
     \end{cases}
 $$
+
 i.e. a $1$ is the model predicts that the next days closing price is higher than todays closing price. The hit ratio is calculated as follows:
+
 $$
 \text{hit}\_{i} =
     \begin{cases}
-      1, & \text{if}\ \text{trend}\_{i} = \text{actual trend}\_{i} \\
-
+      1, & \text{if}\ \text{trend}\_{i} = \text{actual trend}\_{i} 
+      \\
       0, & \text{otherwise}
     \end{cases}
 $$
+
 $$
 \text{hit ratio} = \frac{1}{m}\sum\_{i=1}^{m} \text{hit}\_{i}
 $$
+
 where $m$ is the number of testing samples.
 
 The other two measures are the mean squared error (MSE) and the mean absolute error (MAE):
+
 $$
 \text{MSE} = \sum\_{i=1}^{m}(y\_{i} - \hat{y}\_{i})^2
 $$
+
 $$
 \text{MAE} = \sum\_{i=1}^{m} |y\_{i}-\hat{y}\_{i}|
 $$
+
 both are used as it can allow for comparison with anomalies. The MSE weights anomalies high and so if a model has a high MSE it can be seen it had a few anomaly results in which the distance from the actual value was high. This is important in stock price prediction because if there is a lot of anomalies the model is risky and should not be used as it could risk investments.
 
 

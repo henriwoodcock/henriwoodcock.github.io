@@ -30,8 +30,10 @@ description: This project applies best modern practices found in other areas of 
 # Introduction
 An _autoencoder_ is a neural network which learns to recreate its input usually through some bottleneck. Autoencoders have been an interest in research in deep learning since the 80s [1]. Creating a bottleneck means that autoencoders are built for dimensionality reduction, however have also been used for anomaly detection [2], neural network pretraining [3] and more.
 
-
-{% include image.html url="/assets/images/nn.png" description="Figure 1: A Simple Autoencoder Architecture." %}
+<figure>
+ <img src ="/assets/images/nn.png" alt="A simple autoencoder" class = "center"/>
+ <figcaption> class="center">Figure 1: A Simple Autoencoder Architecture</figcaption>
+ <figure>
 
 
 An autoencoder can be thought of in two parts, an encoder and a decoder [1], the encoder takes in the input data $\mathbf{x}\_{i}$ and outputs a lower dimensional representation, call this $\mathbf{z}\_{i}$. The decoder takes as input $\mathbf{z}\_{i}$ and outputs the original input $\mathbf{x}\_{i}$.

@@ -7,6 +7,8 @@
 - favicon update
 - update descriptions underneath each page header
 
+- using postgresql for a data science project
+
 
 ## Contents
 

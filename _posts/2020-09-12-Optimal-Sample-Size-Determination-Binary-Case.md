@@ -35,7 +35,7 @@ __Definition__: a $95%$ confidence interval for $p$ is an interval in which if w
 For the general case, the formula for this is:
 $$ \hat{p} \pm z \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} $$
 
-Where $\hat{p} is our estimate for $p$ (what we are trying to find), $z$ represents a z-score from the normal distribution (for example 1.96 would relate to a 95% z-score).
+Where $\hat{p}$ is our estimate for $p$ (what we are trying to find), $z$ represents a z-score from the normal distribution (for example 1.96 would relate to a $95$% z-score).
 
 ## Optimal Sample Size
 Now to calculate the optimal sample size we can look at it the other way and rearrange this formula to find $n$. First, let's expand the confidence interval:

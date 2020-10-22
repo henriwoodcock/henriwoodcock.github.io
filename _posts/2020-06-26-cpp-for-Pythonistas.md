@@ -1,11 +1,6 @@
 # C++ for Pythonistas and Data Scientists
 > An introduction to Cling to help learn C++
 
-<br>
-
-{% include info.html text="This post is also available on towardsdatascience <a href="https://towardsdatascience.com/c-for-pythonistas-and-data-scientists-2e1a74a7b8be">here<\a>." %}
-
-<br>
 
 When studying mathematics at University I was introduced to both Python and R. Since then I have only stuck to those two languages and dabbled in other languages when needed.
 

@@ -6,7 +6,7 @@ I am currently a data scientist in strategic consulting.
 
 On my website you can find:
 - <a class="link" href="{{ site.url }}/projects">My Projects</a>
-- <a class="link" href="{{ site.url }}/blog">My Blog</a>
+- <a class="link" href="{{ site.url }}">My Blog</a>
 - <a class="link" href="{{ site.url }}/cv">My CV</a>
 
 <br>

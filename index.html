@@ -1,90 +1,15 @@
 ---
-layout: default
-title: Home
+layout: home
+search_exclude: true
+image: images/logo.png
 ---
 
-<div class="posts">
+This site is built with [fastpages](https://github.com/fastai/fastpages), An easy to use blogging platform with extra features for Jupyter Notebooks.
 
-  <h1 style="text-align:center">Home</h1>
-  <p style="text-align:center">Welcome to my site. Here you can find a collection of my projects and blog posts.</p>
-</div>
+![]({{site.baseurl}}/images/diagram.png "https://github.com/fastai/fastpages")
 
-<div class = "nav">
-<center>
-    <ul>
-      <li>
-        <a class="link" href="">Home</a>
-      </li>
-      <li>
-        <a class="link" href="{{ site.url }}/about">About</a>
-      </li>
-      <li>
-        <a class="link" href="{{ site.url }}/blog">Blog</a>
-      </li>
-      <li>
-        <a class="link" href="{{ site.url }}/projects">Projects</a>
-      </li>
-      <li>
-        <a class="link" href="{{ site.url }}/cv">CV</a>
-      </li>
-    </ul>
-</center>
-</div>
+[fastpages](https://github.com/fastai/fastpages) automates the process of creating blog posts via GitHub Actions, so you don't have to fuss with conversion scripts.  A full list of features can be found on [GitHub](https://github.com/fastai/fastpages).  
 
-<hr>
+You can edit the `index.html` file to change this content.
 
-<h3 class="page-title">Latest Posts</h3>
-
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  {% if post.project == null %}
-  <div class="post">
-    {% include mathjax.html %}
-    <h1 class="post-title2">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  {% endif %}
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
-
-<hr>
-
-<p class="social-links">
-  <a href="https://github.com/henriwoodcock" class="social-link">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-  <a href="https://www.linkedin.com/in/henri-woodcock-682338155/" class="social-link">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</p>
+# Posts

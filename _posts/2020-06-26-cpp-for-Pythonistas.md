@@ -3,7 +3,7 @@
 
 <br>
 
-{% include info.html text="This post is also available on towardsdatascience [here](https://towardsdatascience.com/c-for-pythonistas-and-data-scientists-2e1a74a7b8be)" %}
+{% include info.html text="This post is also available on towardsdatascience <a href="https://towardsdatascience.com/c-for-pythonistas-and-data-scientists-2e1a74a7b8be">here<\a>." %}
 
 <br>
 

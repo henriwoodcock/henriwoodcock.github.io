@@ -6,6 +6,7 @@
 
 ![](/images/images/nn.png "Autoencoder Architecture. Image made using https://alexlenail.me/NN-SVG/LeNet.html.")
 
+<br>
 
 ## Introduction
 [fastai](https://docs.fast.ai/index.html) is a deep learning library that simplifies training neural networks using modern best practices [1]. While fastai provides users with a high-level neural network API, it is designed to allow researchers and users to easily mix in low-level methods while still making the overall training process as easy and accessible to all.
@@ -14,6 +15,7 @@ This post is going to cover how to set up an _autoencoder_ in fastai. This will 
 
 _Note: a basic understanding of fastai and PyTorch is assumed._
 
+<br>
 
 ## Implementation
 
@@ -149,12 +151,15 @@ learn.lr_find()
 learn.fit_one_cycle()
 ```
 
+<br>
+
 ## Example Results
 Using the fastai library I trained 10 epochs on a subset of the [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) using lr_find to find an optimal learning rate and fit_one_cycle and achieved the following results:
 
 
 ![](/images/post_images/autoencoders_in_fastai/training_show_results.png "Results from 10 epochs using the fastai library.")
 
+<br>
 
 ## Conclusion
 Here I have presented a simple overview of how to implement an autoencoder in fastai, you can find the notebook [here](https://github.com/henriwoodcock/blog-post-codes/blob/master/autoencoders-in-fastai/autoencoders-in-fastai.ipynb) which includes all the code as well as how to implement this for a general array dataset. There is also information on how to use the encoder and decoder part once the autoencoder has been trained.

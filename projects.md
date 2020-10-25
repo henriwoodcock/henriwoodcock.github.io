@@ -5,7 +5,7 @@ liner: My personal projects
 
 {% for project in site.projects %}
   <h2>
-    <a href="{{ site.url}} {{ project.url }}">
+    <a href="{{ project.url }}">
       {{ project.title }}
       </a>
   </h2>

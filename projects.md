@@ -1,6 +1,5 @@
 ---
 title: Projects
-liner: My personal projects 
 ---
 
 {% for project in site.projects %}

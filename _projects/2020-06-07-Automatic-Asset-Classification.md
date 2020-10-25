@@ -1,6 +1,7 @@
 ---
 title: Automatic Asset Classification
 description: This project uses neural networks to classify flood defence assets and achieves an accuracy of 90%. Clustering is then used to extend this with underlying asset attributes.
+layout: default
 ---
 
 > This project is a proof of concept to classify assets from images, images are web-scraped from google images. For the corresponding Github repository click [here](https://github.com/henriwoodcock/automatic-asset-classification)

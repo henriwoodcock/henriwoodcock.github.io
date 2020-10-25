@@ -43,4 +43,5 @@ kramdown:
   syntax_highlighter: rouge
 
 collections:
-  - projects
+  projects:
+    output: true

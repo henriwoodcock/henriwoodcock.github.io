@@ -1,3 +1,6 @@
+---
+permalink: /cv/
+---
 # CV
 
 _Last updated 7th August 2020._

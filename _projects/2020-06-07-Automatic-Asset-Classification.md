@@ -3,9 +3,7 @@ title: Automatic Asset Classification
 description: This project uses neural networks to classify flood defence assets and achieves an accuracy of 90%. Clustering is then used to extend this with underlying asset attributes.
 ---
 
-<div class="message">
-  This project is a proof of concept to classify assets from images, images are web-scraped from google images. For the corresponding Github repository click <a href="https://github.com/henriwoodcock/automatic-asset-classification">here</a>.
-</div>
+> This project is a proof of concept to classify assets from images, images are web-scraped from google images. For the corresponding Github repository click [here](https://github.com/henriwoodcock/automatic-asset-classification)
 
 # Key Takeaways:
 - Asset recognition proves high accuracy through the use of transfer learning.
@@ -128,7 +126,9 @@ Because the encoder part of an autoencoder learns to create a smaller representa
 ## Clustering Algorithms
 _Agglomerative Hierarchical Clustering_ is used on the encoded vectors. This works by initially sorting each vector image into its cluster and then iteratively merging clusters based on minimising a distance metric. Hierarchical clustering can be plotted on a dendrogram allowing the user to decide on the optimal number of clusters.
 
-{% include image.html url="/assets/automatic-asset/hierarchical_clustering.png" description="Figure 1: An example of Hierarchical Clustering, taken from the experiment used later on." %}
+
+![](/images/automatic-asset/hierarchical_clustering.png "Figure 1: An example of Hierarchical Clustering, taken from the experiment used later on.")
+
 
 # Experiment
 All experiments were run on [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb) using an assigned GPU at that time, this could mean some models may have used a better GPU than other models, however, this will only have an effect on the time taken and not the outputs.
@@ -150,8 +150,7 @@ With a training dataset length of 444 and a validation dataset of length 110.
 For the semi-automatic asset classification, a Resnet34 pretrained model is fine-tuned to fit to the asset image dataset.
 [image of models](here)
 
-{% include image.html url="/assets/automatic-asset/AutoencoderDiagrams.png" description="Figure 2: Architectures of the Models used in the Experiment." %}
-
+![](/images/AutoencoderDiagrams.png "Figure 2: Architectures of the Models used in the Experiment.")
 
 A basic overview of the architecture of the three models used for clustering can be seen in the diagram. The code for these are available on the [Github repository](https://github.com/henriwoodcock/automatic-asset-classification/). _Pretrained Encoder_ uses the pretrained Resnet34 body as an encoder, _Basic Autoencoder_ uses a simple architecture and _Resnet Autoencoder_ uses the pretrained Resnet34 as an encoder and a decoder is trained on top of this.
 
@@ -165,11 +164,14 @@ A classification accuracy of 0.9000 (90%) is achieved after training for 25 epoc
 
 The confusion matrix shows that most incorrect classifications are related to the flood wall class. This is mainly due to assets similar to flood walls appearing close to other assets such as on large flood gates or near embankments. It could be argued that with a cleaner dataset that these sort of errors could be taken out. When web-scraping for images it is common to find multiple assets in some of the images which can lead to confusion in classification.
 
-{% include image.html url="/assets/automatic-asset/final_confusion_matrix.png" description="Figure 3: Confusion Matrix for the Semi-Automatic Asset Classification." %}
+
+![](/images/automatic-asset/final_confusion_matrix.png "Figure 3: Confusion Matrix for the Semi-Automatic Asset Classification.")
+
 
 Looking at the diagram of the 9 highest losses from the model, this further supports this showing that a lot of misclassifications could be due to poor imagery. The top-left image shows a long outfall pipe in the ocean, however, due to the large pool of water the model has learned to associate pools of water with reservoirs. A better image would focus more on the individual asset, perhaps more up close.
 
-{% include image.html url="/assets/automatic-asset/final_top_losses.png" description="Figure 4: Top Losses for the Semi-Automatic Asset Classification." %}
+![](/images/automatic-asset/final_top_losses.png "Figure 4: Top Losses for the Semi-Automatic Asset Classification.")
+
 
 ### Automatic Asset Classification
 The results for automatic asset classification is difficult to put into quantitative terms and results are more subjective. The quantitative result which will be mentioned for each model is the optimal number of clusters, this shows how well the models were at dividing the data into clusters. Beliefs of how the models have clustered data will be discussed.
@@ -180,55 +182,60 @@ Plots of the clusters are shown with TSNE dimensionality reduction. These are do
 #### Pretrained Encoder
 The pretrained Resnet encoder was able to split the data into 3 clusters. As can be seen, the clusters appear to be very intertwined with each other suggesting not a good split.
 
-{% include image.html url="/assets/automatic-asset/ResnetEnc_plots.png" description="Figure 5: TSNE Representations of the Pretrained Encoder Outputs." %}
+![](/images/automatic-asset/ResnetEnc_plots.png "Figure 5: TSNE Representations of the Pretrained Encoder Outputs.")
+
 
 The first cluster is primarily outfall images. 10/17 images are of an outfall in this cluster, suggesting the model learned a strong relationship between those images. All of the remaining images are featured in a green or muddy area suggesting the model found a good environmental relationship. However, there is not much to associate between them.
 
-{% include image.html url="/assets/automatic-asset/resnet_encoder_class1.png" description="Figure 6: Example Images in Cluster 1 for the Pretrained Encoder." %}
+![](/images/automatic-asset/resnet_encoder_class1.png "Figure 6: Example Images in Cluster 1 for the Pretrained Encoder.")
 
 The second cluster showed primarily large bodies of water and was predominately images of reservoirs, however there we also many images of greenery from embankments. The difference between the green areas from cluster 1 and 2 is that there is no livestock in cluster 2. This shows that the model could help in categorising use of assets. There were no other assets in cluster 2 except embankments and reservoirs.
 
-{% include image.html url="/assets/automatic-asset/resnet_encoder_class2.png" description="Figure 7: Example Images in Cluster 2 for the Pretrained Encoder." %}
+![](/images/automatic-asset/resnet_encoder_class2.png "Figure 7: Example Images in Cluster 2 for the Pretrained Encoder.")
 
 The third cluster showed assets which were your more aggressive defences, ones in water like weirs and flood gates and large structures like flood walls made out of concrete or metal. This cluster could be assets which are more likely to take damage.
 
-{% include image.html url="/assets/automatic-asset/resnet_encoder_class3.png" description="Figure 8: Example Images in Cluster 3 for the Pretrained Encoder." %}
+![](/images/automatic-asset/resnet_encoder_class3.png "Figure 8: Example Images in Cluster 3 for the Pretrained Encoder.")
 
 #### Basic Autoencoder
 In terms of the optimal number of clusters, the basic autoencoder managed the least amount, only splitting the data into two clusters. However as can be seen from the TSNE plots, this is more clear split than what was achieved with the pretrained encoder.
 
-{% include image.html url="/assets/automatic-asset/basic_ae_per.png" description="Figure 9: TSNE Representations of the Basic Autoencoder Outputs." %}
+![](/images/automatic-asset/basic_ae_per.png "Figure 9: TSNE Representations of the Basic Autoencoder Outputs.")
 
 The two clusters in the basic autoencoder are hard to find a relationship between without forcing one. Each cluster contains an array of all asset types and environment types. This suggests this model was not able to find divisive features in the asset images.
 
-{% include image.html url="/assets/automatic-asset/basic_autoencoder_class1.png" description="Figure 10: Example Images in Cluster 1 for the Basic Autoencoder." %}
 
-{% include image.html url="/assets/automatic-asset/basic_autoencoder_class2.png" description="Figure 10: Example Images in Cluster 2 for the Basic Autoencoder." %}
+![](/images/automatic-asset/basic_autoencoder_class1.png "Figure 10: Example Images in Cluster 1 for the Basic Autoencoder.")
+
+
+![](/images/automatic-asset/basic_autoencoder_class2.png "Figure 11: Example Images in Cluster 2 for the Basic Autoencoder.")
+
 
 #### Resnet Autoencoder
 The full ResNet autoencoder was the best in terms of the optimal number of clusters, achieving 5 clusters.
 
-{% include image.html url="/assets/automatic-asset/ResnetAE_all_per.png" description="Figure 11: TSNE Representations of the Resnet Autoencoder Outputs." %}
+![](/images/automatic-asset/ResnetAE_all_per.png "Figure 12: TSNE Representations of the Resnet Autoencoder Outputs.")
 
 Cluster 1 contained the majority of images and it is hard to decipher any underlying attributes between the assets, this could be thought of a cluster created when the images do not fall into any of the other clusters.
 
-{% include image.html url="/assets/automatic-asset/resnet_autoencoder_class1.png" description="Figure 12: Example Images in Cluster 1 for the Resnet Autoencoder." %}
+
+![](/images/automatic-asset/resnet_autoencoder_class1.png "Figure 13: Example Images in Cluster 1 for the Resnet Autoencoder.")
 
 Cluster 2 contained images which has flowing water, suggesting the model could have grouped these based on damages which could be caused from flowing water. This included primarily weirs, reservoirs and outfalls. This cluster contained 24 images.
 
-{% include image.html url="/assets/automatic-asset/resnet_autoencoder_class2.png" description="Figure 13: Example Images in Cluster 2 for the Resnet Autoencoder." %}
+![](/images/automatic-asset/resnet_autoencoder_class2.png "Figure 14: Example Images in Cluster 2 for the Resnet Autoencoder.")
 
 Cluster 3 was a small cluster and only contained 8 images, 6 of these were embankments with the remaining two being a reservoir and a flood gate.
 
-{% include image.html url="/assets/automatic-asset/resnet_ae_class3.png" description="Figure 14: Example Images in Cluster 3 for the Resnet Autoencoder." %}
+![](/images/automatic-asset/resnet_ae_class3.png "Figure 15: Example Images in Cluster 3 for the Resnet Autoencoder.")
 
 Cluster 4 also only contained 8 images. 3 of these were weirs, 3 were flood walls, 1 was a flood gate and 1 was an embankment. Many of these images also contain the light coloured stone used in some bricks and walls suggesting the model was perhaps relating the material to these together.
 
-{% include image.html url="/assets/automatic-asset/resnet_autoencoder_class4.png" description="Figure 15: Example Images in Cluster 4 for the Resnet Autoencoder." %}
+![](/images/automatic-asset/resnet_autoencoder_class4.png "Figure 16: Example Images in Cluster 4 for the Resnet Autoencoder.")
 
 Cluster 5 contained 13 assets, and was primarily metal flood gates or floodwalls. They also appear to be assets with long lives and this could be a benefit to group them. Other assets included embankments and reservoirs.
 
-{% include image.html url="/assets/automatic-asset/resnet_autoencoder_class5.png" description="Figure 16: Example Images in Cluster 5 for the Resnet Autoencoder." %}
+![](/images/automatic-asset/resnet_autoencoder_class5.png "Figure 17: Example Images in Cluster 5 for the Resnet Autoencoder.")
 
 # Conclusion
 In conclusion, this report has developed a proof of concept for the use of autoencoders in classifying flood assets. This could be extended to include assets from all domains. Semi-Automatic Asset Classification has shown that with labelled data neural networks can be trained to classify assets to a high accuracy of 90%.

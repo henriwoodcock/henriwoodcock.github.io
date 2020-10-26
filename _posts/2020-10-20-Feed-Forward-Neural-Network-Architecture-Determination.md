@@ -1,10 +1,7 @@
----
-layout: post
-title: Neural Network Architecture Determination
-mathjax: true
-description: Stop guessing the number of neurons in a layer!
----
->
+# Feed Forward Neural Network Architecture Determination
+
+> Stop guessing the number of neurons in a layer!
+
 
 ## Introduction
 Choosing the right architecture for your deep learning model can drastically change the results achieved. Using too few neurons can lead to the model not finding complex relationships in the data, whereas using too many neurons can lead to an overfitting effect.
@@ -12,6 +9,8 @@ Choosing the right architecture for your deep learning model can drastically cha
 With tabular data it is usually understood that not many layers are required, one or two will suffice. To help understand why this is enough look at the [Universal Approximation Theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem), which proves (in simple terms) that a neural network with one layer and a finite number of neurons can approximate any continuous function.
 
 > However, how do you pick the number of neurons in that layer?
+
+<br>
 
 ## Determining The Number of Neurons
 The aim is to find the right number of neurons to prevent overfitting and underfitting, of course this is not the entire solution to prevent overfitting and underfitting but it can help reduce this from happening.
@@ -34,6 +33,8 @@ One method which helped me understand the formula intuitively was to let $\beta 
 
 > The main rule is to keep alpha ≥ 1 as this means the model degrees of freedom is never greater than the degrees of freedom in the dataset.
 
+<br>
+
 ## Example
 The example is a Jupyter Notebook and compares the advice given by _Jeff Heaton_ when selecting the number of neurons in a layer. I chose this advice as beginners are likely to follow Jeff Heaton’s advice due to his importance in the field.
 
@@ -48,6 +49,7 @@ Jeff Heaton’s advice:
 
 {% gist a4d27b27689c6bae1efedc02e96c2629 %}
 
+<br>
 
 ## References
 [1]  Reference for the formula from [StackExchange](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw) 

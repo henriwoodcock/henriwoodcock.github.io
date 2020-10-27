@@ -7,14 +7,14 @@ description: Comparison of treating stock price prediction as a classification o
 [3001]:{{ site.url }}/downloads/Henri-Woodcock-Math3001.pdf
 
 
-# Abstract
+## Abstract
 
 The objective of this report is to compare the use of classification models and regression models from Machine and Deep Learning are used to predict the price trend of a stock. In this report the stock that is used is the Koninklijke KPN N.V. (KPN) stock from the Amsterdam Exchange (AEX) Index. Technical features and the price of 4 other stocks from the AEX Index are used to train 12 models. The 12 models are 6 regression and 6 classification models, these are Support Vector Machines/Regression, Feedforward Neural Networks, Recurrent Neural Networks and auto-encoded variants of those models. Each model trained to tackle the classification problem and the regression problem. It is found on average that classification models are able to predict price movements better, however this comes at the cost of only achieving higher results when the models are trained on more data, regression models actually outperformed classification models when less training data is used. However, it is also found that regression models can accurately predict the actual price with an average mean absolute error as low as 0.0867 which could be of more value than trend prediction to certain investors. Specific models are then compared Overall it is concluded that classification models work best in predicting trend with the best trend prediction model being a Recurrent Neural Network which predicted the correct trend 55.46%.
 
 # Machine and Deep Learning for Stock Price Prediction: Comparison of Classification and Regression Techniques
 
 
-# Contents
+## Contents
 - [Introduction](#introduction)
 - [K-Fold Validation](#k-fold-validation)
 - [Experiment](#experiment)
@@ -27,10 +27,10 @@ The objective of this report is to compare the use of classification models and 
 - [References](#references)
 - [A1 Trading Strategies](#a1-trading-strategies)
 
-# Introduction
+## Introduction
 Time series prediction has always been of interest especially in finance, the ability to be able to predict the price movements of a stock correctly can lead to an investor being able to make profits with no limit. Machine and Deep learning are growing fields in computer science, in which artificial learning techniques are used to find patterns in data. Deep learning can find relationships between asset returns no matter how complex and nonlinear [1], this can lead to predictions being made from deeper meaningful relationships between assets returns. This has led to an increase in the interest in Machine and Deep Learning techniques in finance, this report will be explaining Machine and Deep Learning from a financial time series perspective to discuss which models work well for time series prediction and how models are trained before finally comparing different models for stock price prediction.
 
-# K-Fold Validation
+## K-Fold Validation
 One way to make sure that the model is not overfit to the data is to use a method called cross-validation. $K$-fold cross validation shuffles the data so it’s in a random order and then splits the data into K subsets. Label these $F\_{1},F\_{2},...,F\_{K}$. Then for $i = 1,...,K$, keep $F\_{i}$ as the testing set and the other $K − 1$ folds for training. Train $K$ different models and compare the test results. The best model can now be chosen or an average of all the models can be made. This means the model can perform well on the entire sample without overfitting any particular training set.
 
 Time series data cannot be shuffled because it is time indexed, and so shuffling the data could mean the model is trained on data thats indexed after the data its tested on. To overcome this, [2] compared a few different methods of $K$-fold validation in time series data. The method that will be used in the experiment is as follows: split the data into $K + 1$ subsets, then the folds are:
@@ -42,11 +42,11 @@ Fold K: Training [1, 2, ..., K], test [K + 1]
 ```
 This method also allows comparison of how dependant the performance of a model is on the size of the data.
 
-# Experiment
+## Experiment
 This experiment compares different algorithms for predicting a stocks price and its trend, it also compares the use of classification and regression algorithms for predicting the trend while also analysing other problems like the importance of the amount data and the use of auto-encoders.
 This section will start with a literature review to discuss developments in financial time series prediction, then discuss the models to be compared and the tools used to create them, followed by an explanation of the conducted experiment and finally a discussion on the results.
 
-## Literature Review
+### Literature Review
 The 21st century has stimulated a huge growth in the accessibility of data and the amount of data collected. This has brought around a rise in Machine and Deep Learning. Machine Learning algorithms can automatically detect patterns in data and in this era, with vast amounts of data, algorithms that can automatically analyse data are needed.
 
 In finance, investors can now download years of data for hundreds of securities, from stock prices to accounting ratios, leading to the use of Machine and Deep Learning techniques in finance. Stock price prediction was (and still is to an extent) dominated by the use of statistical time series models like ARIMA, both [3],[4] both found that the ARIMA method is still effective, with [3] getting a mean absolute percentage error as low as 21% for the Nifty 50 index. However, [5] showed that ARIMA models can only produce satisfactory results with short-term predictions – this is also supported by the results in [5].
@@ -57,11 +57,11 @@ On the regression side, [11] found that RNNs outperform in prediction compared t
 
 One final important paper is [13] which creates a huge deep learning model trained on a large dataset of “billions of orders and transactions” [13] for 1000 US stocks. This gives remarkable results in which the authors believe they have uncovered evidence “universal price formation mechanism”[13] by showing their model can accurately predict prices of unseen stocks after being trained on multiple stocks, outperforming models trained on the singular stock. [13] concludes that creating one universal model is less costly than training thousands of stock specific models.
 
-## Models for Comparison
+### Models for Comparison
 The experiment will use 3 classification and 3 regression models as well as auto-encoded variants of these models and so there are 12 models in total.
 The models are: SVM (and SVR), FFN (feedforward network), RNN (which uses an LSTM layer). All 12 models have been written in Python using Spyder 3.3.3 [14]. To implement the SVM and SVR models, scikit-learn library [15] is used, and Keras [16] is used to implement the FFN, RNN and auto-encoder.
 
-## Data
+### Data
 Data used is daily closing price of KPN, AKZA, RAND, VPK, HEIA and the KPN trading volume from the 4th Febuary 2008 to 16th January 2019 in the Amsterdam stock exchange, taken from Yahoo Finance [17], as well as technical indicators applied to the KPN price and trading volume which can be found in Appendix E. The use of multiple stock prices to predict one is inspired by [13]. The use of technical indicators was inspired by [6, 7] who were able to achieve high results with just the use of technical indicators.
 
 For the classification data set, the output, $ y_{i} $ at each time step was created as follows ( $S\_{t}$ = closing price at time $ t$):
@@ -88,7 +88,7 @@ The input data ($ \mathbf{X} $) for each fold is standardised, this is so all fe
 
 The testing data input is standardised using the same $ \mu\_{x} $ and $ \sigma_{x} $ as the training data so that model knows how to use the data with respect to the training data.
 
-## Performance Measures
+### Performance Measures
 The models will compare the models using 3 different prediction performances. The first measure is the _hit ratio_. This measures how many times the models predict the next trend correctly. For regression models, the output will be converted into a trend by:
 
 \\[
@@ -130,9 +130,9 @@ The other two measures are the mean squared error (MSE) and the mean absolute er
 both are used as it can allow for comparison with anomalies. The MSE weights anomalies high and so if a model has a high MSE it can be seen it had a few anomaly results in which the distance from the actual value was high. This is important in stock price prediction because if there is a lot of anomalies the model is risky and should not be used as it could risk investments.
 
 
-## Results and Discussion
+### Results and Discussion
 
-### MAE Table
+#### MAE Table
 | __MAE__        | Fold 1    | Fold 2    | Fold 3      | Fold 4             | Fold 5             |
 |------------|-----------|-----------|-------------|--------------------|--------------------|
 | SVM        | ﻿0.5053533 | ﻿0.4775161 | ﻿0.4946467   | ﻿0.486081370 | ﻿0.4925053533190578 |
@@ -148,7 +148,7 @@ both are used as it can allow for comparison with anomalies. The MSE weights ano
 | AE RNN     | 0.4978627 | 0.4968552 | 0.5008697   | 0.4987097          | 0.49928015         |
 | AE RNN Reg | 0.5420215 | 2.8771923 | 0.79907376  | 0.35173625         | 0.58343124         |
 
-### MSE Table
+#### MSE Table
 | __MSE__        | Fold 1      | Fold 2      | Fold 3      | Fold 4      | Fold 5      |
 |------------|-------------|-------------|-------------|-------------|-------------|
 | SVM        | 0.505353319 | 0.47751606  | 0.49464668 | 0.48608137  | 0.492505353 |
@@ -164,7 +164,7 @@ both are used as it can allow for comparison with anomalies. The MSE weights ano
 | AE RNN     | 0.25046968  | 0.2480335  | 0.2522605   | 0.24930151  | 0.24994816  |
 | AE RNN Reg | 0.47966784  | 10.426144   | 0.8275157   | 0.16618541  | 0.41073775  |
 
-### Hit Ratio Table
+#### Hit Ratio Table
 | __HITS__       | Fold 1              | Fold 2              | Fold 3              | Fold 4              | Fold 5              |
 |------------|---------------------|---------------------|---------------------|---------------------|---------------------|
 | SVM        | ﻿0.49465 | ﻿0.52248 | ﻿0.50535 | ﻿0.51392  | 0.50749  |
@@ -206,7 +206,7 @@ A reason for the auto-encoder making the performance of regression models worse 
 
 Looking at specific models, the best model for the hit ratio was the classification RNN with a hit ratio of 0.555 (3 s.f.) (as mentioned at the beginning), suggesting that, for the standard investor who will simply want to predict an uptrend or downtrend to make profit, a classification algorithm will work best. This also occurred in Fold 5, suggesting that the more data there is, the better. The best MSE and MAE was achieved by the regression feedforward neural network, with 0.0289(3 s.f.) and 0.00140(3 s.f.), respectively. This is incredibly close, and a plot of this can be seen in Figure 1 to show how close this was to predicting the actual price.
 
-# Conclusion
+## Conclusion
 
 To conclude, if the user is trying to achieve the highest hit rate to profit from the model, then the best model to use would be a classification RNN. This model performed better as the training data increased so it is assumed that, if using this model, then the more training data there is, the better the outcome will be. However, if little training data is available, then the user may be more inclined to use a regression model: Fold 1, 2 and 3 all had a regression model for the top spot. It should be noted, though, that if the auto-encoded feedforward network or the auto-encoded support vector regression model is used, then the prices predicted should not be taken as an accurate prediction of the actual price. In short, the models are good at predicting the movement (hit ratio) but not the actual price (having a high MSE and MAE).
 
@@ -216,7 +216,7 @@ Auto-encoding proved to be successful for classification algorithms but not regr
 
 Finally, this experiment could have been extended to try different stocks, so as to see if these results generalise to many different stocks or whether the results achieved only happen on this specific stock. To see how these results can be useful for investors see Appendix  which discusses trading strategies that could be implemented with these results.
 
-# References
+## References
 
 [1] Heaton, J.B., Polson, N.G., Witte, J.H. Deep Learning For Finance: Deep Portfolios. _Applied Stochastic Models in Business and Industry_. 2017, **33**(1), pp.3-12.
 
@@ -260,7 +260,7 @@ Machines. _Neurocomputing_. 2003, **55**(1), pp. 307-319.
 [20] Sak, H., Senior, A., Beaufays, F. Long short-term memory recurrent neural network architectures for large scale acoustic modeling. . 2014, **15**(1), pp. 338-342.
 
 
-# A1 Trading Strategies
+## A1 Trading Strategies
 
 This section will discuss 3 strategies that could be taken when trading
 the KPN stock from $ 15 $ th February $ 2017 $ to $ 16/01/2019 $ using trend

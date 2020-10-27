@@ -134,6 +134,7 @@ both are used as it can allow for comparison with anomalies. The MSE weights ano
 ### Results and Discussion
 
 #### MAE Table
+
 | __MAE__        | Fold 1    | Fold 2    | Fold 3      | Fold 4             | Fold 5             |
 |------------|-----------|-----------|-------------|--------------------|--------------------|
 | SVM        | ﻿0.5053533 | ﻿0.4775161 | ﻿0.4946467   | ﻿0.486081370 | ﻿0.4925053533190578 |
@@ -150,6 +151,7 @@ both are used as it can allow for comparison with anomalies. The MSE weights ano
 | AE RNN Reg | 0.5420215 | 2.8771923 | 0.79907376  | 0.35173625         | 0.58343124         |
 
 #### MSE Table
+
 | __MSE__        | Fold 1      | Fold 2      | Fold 3      | Fold 4      | Fold 5      |
 |------------|-------------|-------------|-------------|-------------|-------------|
 | SVM        | 0.505353319 | 0.47751606  | 0.49464668 | 0.48608137  | 0.492505353 |
@@ -166,6 +168,7 @@ both are used as it can allow for comparison with anomalies. The MSE weights ano
 | AE RNN Reg | 0.47966784  | 10.426144   | 0.8275157   | 0.16618541  | 0.41073775  |
 
 #### Hit Ratio Table
+
 | __HITS__       | Fold 1              | Fold 2              | Fold 3              | Fold 4              | Fold 5              |
 |------------|---------------------|---------------------|---------------------|---------------------|---------------------|
 | SVM        | ﻿0.49465 | ﻿0.52248 | ﻿0.50535 | ﻿0.51392  | 0.50749  |

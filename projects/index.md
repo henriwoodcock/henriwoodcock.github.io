@@ -4,10 +4,10 @@ permalink: /projects/
 ---
 
 {% for project in site.projects %}
-  <h2>
+  <h3>
     <a href="{{ project.url }}">
       {{ project.title }}
       </a>
-  </h2>
+  </h3>
   <p>{{ project.description }}</p>
 {% endfor %}

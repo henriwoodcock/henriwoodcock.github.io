@@ -67,14 +67,14 @@ Data used is daily closing price of KPN, AKZA, RAND, VPK, HEIA and the KPN tradi
 
 For the classification data set, the output, $ y_{i} $ at each time step was created as follows ( $S\_{t}$ = closing price at time $ t$):
 
-\\[
+$$
 y_{i} =
     \begin{cases}
       1, & \text{if}\ S_{i+1} > S_{i} \\
      \\
       0, & \text{otherwise}
     \end{cases}
-\\]
+$$
 where $ S_{t} $ is the closing price at time $ t $. 
 
 So the classification problem is attempting to predict the trend of the next timestep. For the regression problem, $ y_{i} = S_{i+1} $ and so the regression models are attempting to predict the actual real value of the stock price at the next timestep.
@@ -83,50 +83,50 @@ The data is then split into $ 6 $ subsets and setup like $ K $-fold validation f
 
 The input data ($ \mathbf{X} $) for each fold is standardised, this is so all features have a mean of $ 0 $ and variance of $ 1 $, this makes training perform better as the algorithms are not skewed by features which are alot larger than others, for example volume traded $ \gg $ close price (the data before preprocessing can be seen in [Appendix A1](#a1-trading-strategies). This is done by:
 
-\\[
+$$
 \tilde{\mathbf{x}} = \frac{\mathbf{x} - \mu_{x}}{\sigma_{x}}
-\\]
+$$
 
 The testing data input is standardised using the same $ \mu\_{x} $ and $ \sigma_{x} $ as the training data so that model knows how to use the data with respect to the training data.
 
 ### Performance Measures
 The models will compare the models using 3 different prediction performances. The first measure is the _hit ratio_. This measures how many times the models predict the next trend correctly. For regression models, the output will be converted into a trend by:
 
-\\[
+$$
 \text{trend}\_{i} =
     \begin{cases}
       1, & \text{if}\ \hat{y_{i}} > S_{i} 
       \\
       0, & \text{otherwise}
     \end{cases}
-\\]
+$$
 
 i.e. a $ 1 $ is the model predicts that the next days closing price is higher than todays closing price. The hit ratio is calculated as follows:
 
-\\[
+$$
 \text{hit}_{i} =
     \begin{cases}
       1, & \text{if}\ \text{trend}_{i} = \text{actual trend}_{i} 
       \\
       0, & \text{otherwise}
     \end{cases}
-\\]
+$$
 
-\\[
+$$
 \text{hit ratio} = \frac{1}{m}\sum_{i=1}^{m} \text{hit}_{i}
-\\]
+$$
 
 where $ m $ is the number of testing samples.
 
 The other two measures are the mean squared error (MSE) and the mean absolute error (MAE):
 
-\\[
+$$
 \text{MSE} = \sum_{i=1}^{m}(y\_{i} - \hat{y}\_{i})^2
-\\]
+$$
 
-\\[
+$$
 \text{MAE} = \sum\_{i=1}^{m} |y\_{i}-\hat{y}\_{i}|
-\\]
+$$
 
 both are used as it can allow for comparison with anomalies. The MSE weights anomalies high and so if a model has a high MSE it can be seen it had a few anomaly results in which the distance from the actual value was high. This is important in stock price prediction because if there is a lot of anomalies the model is risky and should not be used as it could risk investments.
 
@@ -232,7 +232,7 @@ Finally, this experiment could have been extended to try different stocks, so as
 [6] Kim, K. J. Financial Time Series Forecasting Using Support Vector
 Machines. _Neurocomputing_. 2003, **55**(1), pp. 307-319.
 
-[7] Qian, X.Y. and Gao, S. \[E-print\]. Financial Series Prediction: Comparison Between Precision of Time Series Models and Machine Learning Methods. _arXiv_. arXiv:1706.00948. 2017.
+[7] Qian, X.Y. and Gao, S. [E-print]. Financial Series Prediction: Comparison Between Precision of Time Series Models and Machine Learning Methods. _arXiv_. arXiv:1706.00948. 2017.
 
 [8] Pai, P.F. and Lin, C.S. A hybrid ARIMA and support vector machines model in stock price forecasting. _Omega_. 2005, **33**(6), pp. 497-505.
 
@@ -242,17 +242,17 @@ Machines. _Neurocomputing_. 2003, **55**(1), pp. 307-319.
 
 [11] Iqbal, Z, Ilyas, R., Shahzad, W., Mahmood, Z., Anjum, J. Efficient Machine Learning Techniques for Stock Market Prediction. _International Journal of Engineering Research and Applications_. 2019, **3**(1), pp. 855-867.
 
-[12] Wanjawa, B. and Muchemi, L. \[E-print\]. ANN Model to Predict Stock Prices at Stock Exchange Markets. _arXiv_. arXiv:1602.06561. 2014.
+[12] Wanjawa, B. and Muchemi, L. [E-print]. ANN Model to Predict Stock Prices at Stock Exchange Markets. _arXiv_. arXiv:1602.06561. 2014.
 
 [13] Sirignano, J. and Cont, R. Universal Features of Price Formation in Financial Markets: Perspectives From Deep Learning. _SSRN Electronic Journal_. 2018, Available at SSRN: https://ssrn.com/abstract=3141294 or http://dx.doi.org/10.2139/ssrn.3141294.
 
-[14] Raybaut, P. *Spyder* (3.3.1). \[Software\]. 2018. \[Accessed 10th January 2019\].
+[14] Raybaut, P. *Spyder* (3.3.1). [Software]. 2018. [Accessed 10th January 2019].
 
 [15] Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., Duchesnay, E. Scikit-learn: Machine Learning in Python. _Journal of Machine Learning Research_. 2011, **12**(1), pp. 2825-2830.
 
-[16] Chollet, F. *Keras* (2.2.0). \[Software\]. 2018. \[Accessed 10th January 2019\].
+[16] Chollet, F. *Keras* (2.2.0). [Software]. 2018. [Accessed 10th January 2019].
 
-[17] Yahoo! Finance. Koninklijke KPN N.V. (KPN.AS). 30th Jan. *Yahoo! Finance*. 2019. \[Online\]. \[Accessed 5th Feb 2019\]. Available from: https://finance.yahoo.com/quote/KPN.AS
+[17] Yahoo! Finance. Koninklijke KPN N.V. (KPN.AS). 30th Jan. *Yahoo! Finance*. 2019. [Online]. [Accessed 5th Feb 2019]. Available from: https://finance.yahoo.com/quote/KPN.AS
 
 [18] Halevy, A., Norvig, P., Pereira, F. The Unreasonable Effectiveness of Data. _IEEE Intelligent Systems_. 2009, **24**(2), pp. 8-12.
 

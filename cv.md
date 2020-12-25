@@ -14,7 +14,9 @@ _Last updated 7th August 2020._
 
 ### Experience
 
- - Jacobs Engineering, Asset Management Consultant, 2019 - Present
+- ARM, Technical AI Evangelist, 2020 - present
+
+ - Jacobs Engineering, Asset Management Consultant, 2019 - 2020
      - Developed a neural network in PyTorch to a high accuracy which reduced the reliance on the current model which can take weeks to run. The neural network can make predictions in seconds.
      - Used PyTorch's Captum to analyse a current in use neural network model, giving the project management validation and security the model's behaviour was similar to engineering principles.
     - Automated the updating of a Hydraulic Model in Python with visualisation of changes between current model and new data and created a health score for each individual parameter. This allowed modellers to cut down their time to important parts of the model, this process use to be done manually with every parameter checked.

@@ -6,8 +6,6 @@ gone back in lockdown.
 
 ## 2021 Goals
 
-The trend seems to be to set yourself goals 
-
 1. Finish an app
 2. Start a business 
 3. Read more than 2020 (atleast 1 book then)

@@ -5,6 +5,8 @@ _This tutorial is for people like myself who do not know much about Jekyll, html
 or any other web framework but have a personal site. I could not find anything online
 which explained how to do this simply. I hope this helps somebody like me!_
 
+## Introduction
+
 It is becoming more and more important to have an online presence. From data scientists, 
 artists, writers all the way to small businesses; having a portfolio website is 
 becoming critical to success.
@@ -23,6 +25,12 @@ This post is split into 4 steps with a section at the end for extra features whi
 be incorporated.
 
 ## Contents
+
+1. [Create a Projects folder](#create-a-projects-folder)
+2. [Edit the \_config.yml](#edit-the-config.yml)
+3. [Create a project markdown file](#Create-a-project-markdown-file)
+4. [Create the projects web page](#Create-the-projects-web-page)
+5. [Extras](#Extras)
 
 ## 1. Create a Projects folder
 In your Jekyll site directory, you need to create a new folder and name it

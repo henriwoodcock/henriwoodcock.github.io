@@ -2,7 +2,7 @@
 
 > A full end to end tutorial to create a dataset without web scraping!
 
-![](images/post_images/img_dataset/pexels-taryn-elliott-4340919.jpg "Photo by Taryn Elliott from Pexels")
+![](/images/post_images/img_dataset/pexels-taryn-elliott-4340919.jpg "Photo by Taryn Elliott from Pexels")
 
 Data scientists love creating models and competing to slightly improve accuracy
 on datasets. By now, so many data scientists have used these popular datasets
@@ -61,7 +61,7 @@ Hitting enter will generate a CSV file with links to all the images in your
 google search. You can now rename this CSV to be the name of the class you just
 searched. Repeat this for each category you wish to include.
 
-![](images/post_images/img_dataset/img-of-google-search.png "The console on Safari.")
+![](/images/post_images/img_dataset/img-of-google-search.png "The console on Safari.")
 
 The next step to data collection is downloading the images in the CSV. We can
 do this by opening each CSV and then looping through all the rows to download
@@ -203,7 +203,7 @@ in that category. If the model predicted “yes”, you keep the image and if �
 you remove the image. An example of doing this with Fastai can be seen on my
 [Github](https://github.com/henriwoodcock/automatic-asset-classification/blob/master/automatic_asset_classification/web_scrape/image_processing.py).
 
-![](images/post_images/img_dataset/yes_no_folder.png "An example of the yes/no folder for Flood Gate.")
+![](/images/post_images/img_dataset/yes_no_folder.png "An example of the yes/no folder for Flood Gate.")
 
 ### 3. Cropping Images ready for use
 

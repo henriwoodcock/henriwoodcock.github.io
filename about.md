@@ -18,4 +18,5 @@ My blog posts are also available on [towardsdatascience](https://towardsdatascie
 You can contact/find me at:
 - [Email](mailto:henriwoodcock@gmail.com)
 - [GitHub](https://github.com/henriwoodcock)
+- [Twitter](https://twitter.com/henriwoodcock)
 - [Linkedin](https://www.linkedin.com/in/henri-woodcock-682338155/).

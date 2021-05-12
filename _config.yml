@@ -27,6 +27,7 @@ plugins:
   - jekyll-gist
   - jekyll-octicons
   - jekyll-github-metadata
+  - jekyll-sitemap
 
 titles_from_headings:
   enabled:     true

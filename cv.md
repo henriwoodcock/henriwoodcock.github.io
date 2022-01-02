@@ -14,14 +14,11 @@ _Last updated 7th August 2020._
 
 ### Experience
 
-- ARM, Technical AI Evangelist, 2020 - present
+- BMLL Technoligies, Software Developer, 2021 - Present
 
-- Jacobs Engineering, Asset Management Consultant, 2019 - 2020
-     - Proposed and developed a neural network to predict fatigue damage on mooring lines. Use of a neural network cut down computation time by days compared to using the current model while keeping accuracy.
-     - Verifying a neural network (with PyTorch's Captum) which was developed by the team, gave the team confidence in the model and led to further investment into work with neural networks.
-    - Automation of identify linear assets from data of Thames Estuary. Usually looked through manually, I applied statistical concepts to find geospatial anomalies which I classified as assets. Big data, tens of millions of points analysed.
-    - Analysis of data to help cluster customers to create targeted advertisements. Hypothesis testing, visualisations, clustering, binary classification/regression.
-    - Automated the updating of a Hydraulic Model in Python with visualisation of changes between current model and new data and created a health score for each individual parameter. This allowed modellers to cut down their time to important parts of the model, this process use to be done manually with every parameter checked.
+- ARM, Technical AI Evangelist, 2020 - 2021
+
+- Jacobs Engineering, Strategic Consultant, 2019 - 2020
 
 ### Projects
 

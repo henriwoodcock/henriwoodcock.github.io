@@ -2,7 +2,9 @@
     {% for entry in entries %}
         <li>
             {% if entry.url %}
-                <a href="{{ entry.url }}">{{ entry.title }}</a> - {{ entry.subtitle }}
+            <div>
+                <a href="{{ entry.url }}">{{ entry.title }}</a> {% if entry.subtitle %} - {{ entry.subtitle }} {% endif %}
+            </div>
             {% else %}
                 {{ entry.title }}
             {% endif %}

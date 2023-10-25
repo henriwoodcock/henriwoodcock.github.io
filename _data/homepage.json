@@ -7,8 +7,17 @@
             "entries": [
                 {
                     "title": "trckrspace",
-                    "url": "http://github.com/stopnoanime/11ty-no-style-please",
+                    "url": "https://trckrspace.com",
                     "subtitle": "A event tracking tool with powerful data querying"
+                }
+            ]
+        },
+        {
+            "title": "Contact",
+            "entries": [
+                {
+                    "title": "twitter",
+                    "url": "http://github.com/stopnoanime/11ty-no-style-please"
                 }
             ]
         }

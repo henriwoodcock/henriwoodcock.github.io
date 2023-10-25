@@ -14,5 +14,6 @@ _posts/2019-12-07-Optimal-Sample-Size-Determination-Binary-Case.md
 _posts/2020-16-06-The-Iterative-Z-Score-for-Time-Series.md
 _posts/2019-01-26-autoencoders-in-fastai-copy.md
 assets/post_images/minimum_dist_to_line_post/
+node_modules/
 
 *.pdf

@@ -3,17 +3,4 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-_posts/2019-11-30-Efficient-Minimum-Point-To-Line-Calculation.md
-_posts/2019-11-30-Feature-Importance-In-Binary-Classification.md
-_posts/2019-12-07-Multiclass-Sample-Size-Determination.md
-_posts/2019-01-26-autoencoders-in-fastai.md
-_posts/2019-12-07-Anomaly-Detection-In-Geospatial-Data.md
-_posts/2020-12-07-Confidence-Intervals.md
--posts/2019-12-07-Optimal-Sample-Size-Determination-Binary-Case.md
-_posts/2019-12-07-Optimal-Sample-Size-Determination-Binary-Case.md
-_posts/2020-16-06-The-Iterative-Z-Score-for-Time-Series.md
-_posts/2019-01-26-autoencoders-in-fastai-copy.md
-assets/post_images/minimum_dist_to_line_post/
 node_modules/
-
-*.pdf

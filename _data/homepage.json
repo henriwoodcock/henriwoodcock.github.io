@@ -9,6 +9,11 @@
                     "title": "trckrspace",
                     "url": "https://trckrspace.com",
                     "subtitle": "A event tracking tool with powerful data querying"
+                },
+                {
+                    "title": "💩 CrappyChat 💩",
+                    "url": "https://crappychat.app",
+                    "subtitle": "Another crappy social media. Currently WIP."
                 }
             ]
         },

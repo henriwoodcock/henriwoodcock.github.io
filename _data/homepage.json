@@ -19,6 +19,11 @@
                     "title": "25Tax",
                     "url": "https://25tax.co.uk",
                     "subtitle": "MTD compliant web app for submitting VAT returns and viewing obligations. Currently WIP."
+                },
+                {
+                    "title": "Polyline Icon Maker",
+                    "url": "https://henriwoodcock.com/polyline-icons",
+                    "subtitle": "Convert a encoded polyline to an SVG."
                 }
             ]
         },

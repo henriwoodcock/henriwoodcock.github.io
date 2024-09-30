@@ -24,6 +24,11 @@
                     "title": "Polyline Icon Maker",
                     "url": "https://henriwoodcock.com/polyline-icons",
                     "subtitle": "Convert a encoded polyline to an SVG."
+                },
+                {
+                    "title": "JWT Cracker",
+                    "url": "https://henriwoodcock.com/jwt-cracker",
+                    "subtitle": "Crack a JWT against a given wordlist.."
                 }
             ]
         },

@@ -16,6 +16,11 @@
                     "subtitle": "A monthly segment competition in London to explore London in a competitive way"
                 },
                 {
+                    "title": "📈 shadcn-chartgrid",
+                    "url": "https://henriwoodcock.com/shadcn-chartgrid/",
+                    "subtitle": "Drag and drop (dnd-kit) grid for shadcn charts."
+                },
+                {
                     "title": "💩 CrappyChat 💩",
                     "url": "https://crappychat.app",
                     "subtitle": "Another crappy social media. Currently WIP."

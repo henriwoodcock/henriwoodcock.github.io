@@ -21,6 +21,11 @@
                     "subtitle": "Drag and drop (dnd-kit) grid for shadcn charts."
                 },
                 {
+                    "title": "pico-wake-work",
+                    "url": "https://www.hackster.io/hlsw/pico-wake-word-1e2372",
+                    "subtitle": "First port of the TinyML Wake Word on the Raspberry Pi Pico"
+                },
+                {
                     "title": "💩 CrappyChat 💩",
                     "url": "https://crappychat.app",
                     "subtitle": "Another crappy social media. Currently WIP."
@@ -39,6 +44,26 @@
                     "title": "JWT Cracker",
                     "url": "https://henriwoodcock.com/jwt-cracker",
                     "subtitle": "Crack a JWT against a given wordlist.."
+                }
+            ]
+        },
+        {
+            "title": "Writing highlights",
+            "entries": [
+                {
+                    "title": "Fixed-point DSP for Data Scientists",
+                    "subtitle": "Learn how to create a DSP pipeline in Python and convert it to run on an Arm Cortex-M based MCU using C/C++ and Arm's CMSIS-DSP library.",
+                    "url": "https://towardsdatascience.com/fixed-point-dsp-for-data-scientists-d773a4271f7f/"
+                },
+                {
+                    "title": "End-to-end tinyML audio classification with the Raspberry Pi RP2040",
+                    "subtitle": "An end-to-end flow for ML audio classification: collecting and capturing data for training, transfer learning, re-training, deploying to a Raspberry Pi RP2040 based device using Google Colab.".
+                    "url": "https://github.com/ArmDeveloperEcosystem/ml-audio-classifier-example-for-pico/blob/main/ml_audio_classifier_example_for_pico.ipynb"
+                },
+                {
+                    "title": "Medium",
+                    "subtitle": "Find more on medium",
+                    "url": "https://henriwoodcock.medium.com/"
                 }
             ]
         },

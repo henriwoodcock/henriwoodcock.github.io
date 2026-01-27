@@ -57,7 +57,7 @@
                 },
                 {
                     "title": "End-to-end tinyML audio classification with the Raspberry Pi RP2040",
-                    "subtitle": "An end-to-end flow for ML audio classification: collecting and capturing data for training, transfer learning, re-training, deploying to a Raspberry Pi RP2040 based device using Google Colab.".
+                    "subtitle": "An end-to-end flow for ML audio classification: collecting and capturing data for training, transfer learning, re-training, deploying to a Raspberry Pi RP2040 based device using Google Colab.",
                     "url": "https://github.com/ArmDeveloperEcosystem/ml-audio-classifier-example-for-pico/blob/main/ml_audio_classifier_example_for_pico.ipynb"
                 },
                 {
